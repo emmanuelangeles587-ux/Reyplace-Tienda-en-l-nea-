@@ -5,6 +5,7 @@
 
 import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { useAuth } from './context/AuthContext';
+import { PermissionsProvider } from './context/PermissionsProvider';
 import { motion } from 'motion/react';
 import {
   ShoppingBag,
@@ -512,7 +513,8 @@ export default function App() {
 
 
   return (
-    <div className="min-h-screen flex flex-col bg-slate-50 dark:bg-[#070d1e] text-slate-900 dark:text-slate-100 transition-colors duration-200">
+    <PermissionsProvider>
+      <div className="min-h-screen flex flex-col bg-slate-50 dark:bg-[#070d1e] text-slate-900 dark:text-slate-100 transition-colors duration-200">
       <DynamicMetaTags selectedCategory={filters.category} detailProduct={detailProduct} />
       <SinaloaGeoWelcomeBanner onTriggerToast={triggerToast} />
 
@@ -1886,5 +1888,6 @@ export default function App() {
         </div>
       </footer>
     </div>
-  );
+  </PermissionsProvider>
+);
 }

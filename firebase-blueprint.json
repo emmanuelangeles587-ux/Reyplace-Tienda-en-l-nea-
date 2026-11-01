@@ -19,6 +19,28 @@
         "displayName": { "type": "string" },
         "email": { "type": "string" }
       }
+    },
+    "Product": {
+      "title": "Product",
+      "description": "Product in catalog",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "price": { "type": "number" },
+        "stock": { "type": "number" },
+        "category": { "type": "string" }
+      },
+      "required": ["name", "price", "stock", "category"]
+    },
+    "Admin": {
+      "title": "Admin",
+      "description": "Superadmin user",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "email": { "type": "string" }
+      },
+      "required": ["uid", "email"]
     }
   },
   "firestore": {
@@ -29,6 +51,14 @@
     "/users/{userId}": {
       "schema": { "$ref": "#/entities/UserProfile" },
       "description": "User profile"
+    },
+    "/products/{productId}": {
+      "schema": { "$ref": "#/entities/Product" },
+      "description": "Catalog products"
+    },
+    "/admins/{uid}": {
+      "schema": { "$ref": "#/entities/Admin" },
+      "description": "Authorized admins"
     }
   }
 }

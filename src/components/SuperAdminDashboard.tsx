@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import { ShieldAlert, Package, TrendingUp, Users, Activity, Lock, Unlock, RefreshCw, CheckCircle, AlertTriangle, Search, X } from 'lucide-react';
+import { ShieldAlert, Package, TrendingUp, Users, Activity, Lock, Unlock, RefreshCw, CheckCircle, AlertTriangle, Search, X, ClipboardList } from 'lucide-react';
 import { PRODUCTS, Product } from '../data/products';
+import { useAccess } from '../context/PermissionsProvider';
+import { maskEmail } from '../utils/security';
 
 interface SuperAdminDashboardProps {
   onClose: () => void;
@@ -8,16 +10,26 @@ interface SuperAdminDashboardProps {
 }
 
 export function SuperAdminDashboard({ onClose, onTriggerToast }: SuperAdminDashboardProps) {
-  const [adminTab, setAdminTab] = useState<'analytics' | 'inventory' | 'clients'>('analytics');
+  const { hasRole } = useAccess();
+  const [adminTab, setAdminTab] = useState<'analytics' | 'inventory' | 'clients' | 'audit'>('analytics');
   const [productList, setProductList] = useState<Product[]>(PRODUCTS);
   const [searchQuery, setSearchQuery] = useState<string>('');
 
+  if (!hasRole('superadmin')) {
+    onClose();
+    return null;
+  }
+
   // Mock customer security nodes
   const [clientNodes, setClientNodes] = useState([
-    { id: 'node-01', client: 'Dr. Roberto Mendoza', location: 'Fracc. Las Quintas, Los Mochis', status: 'Online', signal: '-64 dBm', battery: '98%', armed: true, lastPing: 'Hace 4s' },
-    { id: 'node-02', client: 'Ing. Sofía Valenzuela', location: 'Centro, Los Mochis', status: 'Online', signal: '-58 dBm', battery: '100%', armed: true, lastPing: 'Hace 12s' },
-    { id: 'node-03', client: 'Lic. Carlos Cota', location: 'Topolobampo Puerto', status: 'Warning', signal: '-82 dBm', battery: '34%', armed: false, lastPing: 'Hace 2m' },
-    { id: 'node-04', client: 'Residencial Alameda', location: 'Los Mochis, Sinaloa', status: 'Online', signal: '-51 dBm', battery: '92%', armed: true, lastPing: 'Hace 1s' },
+    { id: 'node-01', client: 'Roberto Mendoza', email: 'roberto@example.com', location: 'Fracc. Las Quintas, Los Mochis', status: 'Online', signal: '-64 dBm', battery: '98%', armed: true, lastPing: 'Hace 4s' },
+    { id: 'node-02', client: 'Sofía Valenzuela', email: 'sofia@example.com', location: 'Centro, Los Mochis', status: 'Online', signal: '-58 dBm', battery: '100%', armed: true, lastPing: 'Hace 12s' },
+  ]);
+
+  const [auditLogs] = useState([
+    { id: 1, event: 'User Login', user: 'admin@reyplace.mx', timestamp: '2026-11-01 01:05:00' },
+    { id: 2, event: 'Inventory Update', user: 'admin@reyplace.mx', timestamp: '2026-11-01 01:06:15' },
+    { id: 3, event: 'Security Alert: Intrusion', user: 'System', timestamp: '2026-11-01 01:08:42' },
   ]);
 
   const handleStockChange = (productId: string, delta: number) => {
@@ -105,6 +117,17 @@ export function SuperAdminDashboard({ onClose, onTriggerToast }: SuperAdminDashb
           >
             <Activity className="w-4 h-4" /> Monitoreo de Nodos (En Vivo)
           </button>
+          <button
+            type="button"
+            onClick={() => setAdminTab('audit')}
+            className={`pb-3 px-4 text-xs font-bold border-b-2 transition-colors flex items-center gap-2 ${
+              adminTab === 'audit'
+                ? 'border-rose-500 text-rose-500'
+                : 'border-transparent text-slate-400 hover:text-slate-200'
+            }`}
+          >
+            <ClipboardList className="w-4 h-4" /> System Audit Log
+          </button>
         </div>
 
         {/* Content Body */}
@@ -134,42 +157,6 @@ export function SuperAdminDashboard({ onClose, onTriggerToast }: SuperAdminDashb
                   <p className="text-[10px] text-emerald-300">Servidor Los Mochis Node</p>
                 </div>
               </div>
-
-              {/* Regional Sales Breakdown */}
-              <div className="neo-surface p-5 rounded-2xl space-y-3">
-                <h4 className="text-xs font-bold text-slate-900 dark:text-white uppercase tracking-wider">
-                  Desglose de Ventas por Región (Estado de Sinaloa)
-                </h4>
-                <div className="space-y-2">
-                  <div>
-                    <div className="flex justify-between text-xs mb-1">
-                      <span>Los Mochis (Centro y Residencial)</span>
-                      <span className="font-mono-num font-bold">58% ($488,700 MXN)</span>
-                    </div>
-                    <div className="w-full h-2 neo-inset rounded-full overflow-hidden">
-                      <div className="bg-cyan-500 h-full w-[58%]" />
-                    </div>
-                  </div>
-                  <div>
-                    <div className="flex justify-between text-xs mb-1">
-                      <span>Culiacán Rosales</span>
-                      <span className="font-mono-num font-bold">24% ($202,220 MXN)</span>
-                    </div>
-                    <div className="w-full h-2 neo-inset rounded-full overflow-hidden">
-                      <div className="bg-emerald-500 h-full w-[24%]" />
-                    </div>
-                  </div>
-                  <div>
-                    <div className="flex justify-between text-xs mb-1">
-                      <span>Mazatlán Zona Dorada</span>
-                      <span className="font-mono-num font-bold">18% ($151,670 MXN)</span>
-                    </div>
-                    <div className="w-full h-2 neo-inset rounded-full overflow-hidden">
-                      <div className="bg-amber-500 h-full w-[18%]" />
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           )}
 
@@ -186,13 +173,6 @@ export function SuperAdminDashboard({ onClose, onTriggerToast }: SuperAdminDashb
                     className="w-full neo-inset rounded-2xl pl-10 pr-4 py-2.5 text-xs focus:outline-none"
                   />
                 </div>
-                <button
-                  type="button"
-                  onClick={() => onTriggerToast('Sincronización de inventario con almacén central completada')}
-                  className="px-4 py-2.5 rounded-2xl bg-rose-600 text-white text-xs font-bold flex items-center gap-2 shrink-0"
-                >
-                  <RefreshCw className="w-3.5 h-3.5" /> Sincronizar Almacén
-                </button>
               </div>
 
               <div className="space-y-2">
@@ -219,38 +199,10 @@ export function SuperAdminDashboard({ onClose, onTriggerToast }: SuperAdminDashb
                           </p>
                         </div>
                       </div>
-
-                      <div className="flex items-center gap-4">
-                        <div className="text-right">
-                          <span className={`text-xs font-bold font-mono-num px-2.5 py-1 rounded-xl ${isLowStock ? 'bg-rose-500/20 text-rose-500' : 'bg-emerald-500/20 text-emerald-500'}`}>
-                            Stock: {stock} u.
-                          </span>
-                        </div>
-                        <div className="flex items-center gap-1.5">
-                          {isLowStock && (
-                              <button
-                                type="button"
-                                onClick={() => handleStockChange(p.id, 10)}
-                                className="w-20 h-8 rounded-xl bg-rose-600 text-white text-xs font-bold"
-                              >
-                                Restock
-                              </button>
-                          )}
-                          <button
-                            type="button"
-                            onClick={() => handleStockChange(p.id, -1)}
-                            className="w-8 h-8 rounded-xl neo-inset flex items-center justify-center text-xs font-bold"
-                          >
-                            -
-                          </button>
-                          <button
-                            type="button"
-                            onClick={() => handleStockChange(p.id, 5)}
-                            className="w-8 h-8 rounded-xl neo-inset flex items-center justify-center text-xs font-bold"
-                          >
-                            +5
-                          </button>
-                        </div>
+                      <div className="text-right">
+                        <span className={`text-xs font-bold font-mono-num px-2.5 py-1 rounded-xl ${isLowStock ? 'bg-rose-500/20 text-rose-500' : 'bg-emerald-500/20 text-emerald-500'}`}>
+                          Stock: {stock} u.
+                        </span>
                       </div>
                     </div>
                   );
@@ -261,65 +213,50 @@ export function SuperAdminDashboard({ onClose, onTriggerToast }: SuperAdminDashb
 
           {adminTab === 'clients' && (
             <div className="space-y-4">
-              <div className="flex items-center justify-between">
-                <h4 className="text-xs font-bold text-slate-900 dark:text-white uppercase tracking-wider">
-                  Telemetría y Conexión de Nodos Residenciales (En Vivo)
-                </h4>
-                <span className="text-[10px] text-emerald-400 font-mono-num flex items-center gap-1">
-                  <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" /> WebSocket Seguro Activo
-                </span>
-              </div>
-
-              <div className="space-y-3">
-                {clientNodes.map((node) => (
-                  <div key={node.id} className="neo-surface p-4 rounded-2xl flex items-center justify-between gap-4">
-                    <div className="flex items-center gap-3">
-                      <div className={`w-10 h-10 rounded-xl flex items-center justify-center ${node.status === 'Online' ? 'bg-emerald-500/20 text-emerald-400' : 'bg-amber-500/20 text-amber-400'}`}>
-                        {node.status === 'Online' ? <CheckCircle className="w-5 h-5" /> : <AlertTriangle className="w-5 h-5" />}
-                      </div>
-                      <div>
-                        <h5 className="text-xs font-bold text-slate-900 dark:text-white">
-                          {node.client} ({node.id})
-                        </h5>
-                        <p className="text-[11px] text-slate-500">
-                          {node.location} · {node.lastPing}
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="flex items-center gap-6 text-xs font-mono-num">
-                      <div>
-                        <p className="text-[10px] text-slate-400">Señal</p>
-                        <p className="font-bold text-cyan-400">{node.signal}</p>
-                      </div>
-                      <div>
-                        <p className="text-[10px] text-slate-400">Batería</p>
-                        <p className="font-bold text-emerald-400">{node.battery}</p>
-                      </div>
-                      <div>
-                        <p className="text-[10px] text-slate-400">Estado Alarma</p>
-                        <span className={`px-2 py-0.5 rounded-full text-[10px] font-bold ${node.armed ? 'bg-emerald-500/20 text-emerald-400' : 'bg-slate-700 text-slate-300'}`}>
-                          {node.armed ? 'Armado' : 'Desarmado'}
-                        </span>
-                      </div>
+              {clientNodes.map((node) => (
+                <div key={node.id} className="neo-surface p-4 rounded-2xl flex items-center justify-between gap-4">
+                  <div className="flex items-center gap-3">
+                    <div>
+                      <h5 className="text-xs font-bold text-slate-900 dark:text-white">
+                        {node.client} ({maskEmail(node.email)})
+                      </h5>
+                      <p className="text-[11px] text-slate-500">
+                        {node.location}
+                      </p>
                     </div>
                   </div>
-                ))}
+                </div>
+              ))}
+            </div>
+          )}
+
+          {adminTab === 'audit' && (
+            <div className="space-y-4">
+              <h4 className="text-xs font-bold text-slate-900 dark:text-white uppercase tracking-wider">
+                System Audit Log
+              </h4>
+              <div className="neo-surface rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800">
+                <table className="w-full text-left text-xs">
+                  <thead className="bg-slate-900/50">
+                    <tr>
+                      <th className="p-3 text-slate-400">Timestamp</th>
+                      <th className="p-3 text-slate-400">Event</th>
+                      <th className="p-3 text-slate-400">User</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-800">
+                    {auditLogs.map((log) => (
+                      <tr key={log.id}>
+                        <td className="p-3 font-mono-num">{log.timestamp}</td>
+                        <td className="p-3">{log.event}</td>
+                        <td className="p-3">{log.user}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
               </div>
             </div>
           )}
-        </div>
-
-        {/* Footer */}
-        <div className="p-4 border-t border-slate-200 dark:border-slate-800 bg-slate-900/40 flex justify-between items-center text-xs text-slate-400">
-          <span>Conectado al servidor principal REYPLACE.MX · Los Mochis</span>
-          <button
-            type="button"
-            onClick={onClose}
-            className="px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold"
-          >
-            Cerrar SuperAdmin
-          </button>
         </div>
       </div>
     </div>
