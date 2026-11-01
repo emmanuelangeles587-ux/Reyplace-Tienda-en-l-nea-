@@ -4,8 +4,15 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { createServer as createViteServer } from 'vite';
 import { GoogleGenAI } from '@google/genai';
+import { initializeApp, cert } from 'firebase-admin/app';
+import { getFirestore } from 'firebase-admin/firestore';
+import { PRODUCTS } from './src/data/products';
 
 dotenv.config();
+
+// Initialize Firebase Admin
+initializeApp();
+const db = getFirestore();
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -26,6 +33,43 @@ const ai = aiApiKey
       },
     })
   : null;
+
+// API: Search Products
+app.get('/api/products', async (req, res) => {
+  try {
+    const { category, priceMin, priceMax, protocol } = req.query;
+    let query = db.collection('products') as any;
+    
+    if (category) query = query.where('category', '==', category);
+    if (priceMin) query = query.where('price', '>=', Number(priceMin));
+    if (priceMax) query = query.where('price', '<=', Number(priceMax));
+    
+    let products = (await query.get()).docs.map((doc: any) => doc.data());
+    
+    if (protocol) {
+      products = products.filter((p: any) => p.compatibility.includes(protocol));
+    }
+    
+    res.json(products);
+  } catch (error: any) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+// API: Populate Products (Admin)
+app.post('/api/admin/populate-products', async (req, res) => {
+  try {
+    const batch = db.batch();
+    PRODUCTS.forEach(product => {
+      const docRef = db.collection('products').doc(product.id);
+      batch.set(docRef, product);
+    });
+    await batch.commit();
+    res.json({ message: 'Products populated successfully' });
+  } catch (error: any) {
+    res.status(500).json({ error: error.message });
+  }
+});
 
 app.post('/api/ai-chat', async (req, res) => {
   try {
