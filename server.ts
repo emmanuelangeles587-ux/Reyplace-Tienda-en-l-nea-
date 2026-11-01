@@ -1,4 +1,5 @@
 import express from 'express';
+import { createServer } from 'node:http';
 import dotenv from 'dotenv';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -174,9 +175,15 @@ app.post('/api/generate-room-preview', async (req, res) => {
 });
 
 async function startServer() {
+  const httpServer = createServer(app);
+
   if (process.env.NODE_ENV !== 'production') {
     const vite = await createViteServer({
-      server: { middlewareMode: true },
+      server: {
+        middlewareMode: true,
+        // Share the preview's exposed port instead of opening a separate HMR port.
+        hmr: process.env.DISABLE_HMR === 'true' ? false : { server: httpServer },
+      },
       appType: 'spa',
     });
     app.use(vite.middlewares);
@@ -188,7 +195,7 @@ async function startServer() {
     });
   }
 
-  app.listen(Number(PORT), '0.0.0.0', () => {
+  httpServer.listen(Number(PORT), '0.0.0.0', () => {
     console.log(`REYPLACE.MX server running on http://0.0.0.0:${PORT}`);
   });
 }
