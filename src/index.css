@@ -1,0 +1,90 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Outfit', sans-serif;
+  }
+
+  .font-mono-num {
+    font-family: 'IBM Plex Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Tactile 3D Neomorphic Surface & Glass-Metal Tokens */
+.neo-surface {
+  background: linear-gradient(155deg, #ffffff 0%, #f1f5f9 100%);
+  box-shadow:
+    10px 14px 28px rgba(100, 116, 139, 0.16),
+    -6px -6px 18px rgba(255, 255, 255, 0.95),
+    inset 0 1px 1px rgba(255, 255, 255, 0.95);
+  transition: transform 0.18s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.18s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dark .neo-surface {
+  background: linear-gradient(155deg, #111f40 0%, #091226 100%);
+  box-shadow:
+    12px 16px 34px rgba(2, 6, 18, 0.78),
+    -5px -5px 18px rgba(38, 66, 125, 0.16),
+    inset 0 1px 1px rgba(148, 205, 255, 0.16);
+}
+
+.neo-inset {
+  background: #eaf0f7;
+  box-shadow:
+    inset 3px 3px 8px rgba(148, 163, 184, 0.38),
+    inset -3px -3px 8px rgba(255, 255, 255, 0.9);
+  transition: box-shadow 0.16s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.16s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dark .neo-inset {
+  background: #070e20;
+  box-shadow:
+    inset 4px 4px 11px rgba(2, 5, 15, 0.88),
+    inset -2px -2px 8px rgba(42, 70, 132, 0.18);
+}
+
+.neo-btn-press:active {
+  transform: scale(0.975);
+}
+
+/* Specular 3D Hardware Pedestal Frame */
+.hardware-stage {
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(circle at 50% 35%, rgba(112, 233, 255, 0.14), transparent 68%);
+}
+
+.hardware-stage::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    125deg,
+    rgba(255, 255, 255, 0.16) 0%,
+    rgba(255, 255, 255, 0) 42%,
+    rgba(112, 233, 255, 0.08) 100%
+  );
+  opacity: 0.7;
+  transition: opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.group:hover .hardware-stage::after {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

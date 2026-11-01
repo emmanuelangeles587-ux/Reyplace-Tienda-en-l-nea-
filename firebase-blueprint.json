@@ -1,0 +1,34 @@
+{
+  "entities": {
+    "Cart": {
+      "title": "Cart",
+      "description": "User shopping cart",
+      "type": "object",
+      "properties": {
+        "items": {
+          "type": "object",
+          "description": "Map of product ID to quantity"
+        }
+      }
+    },
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "User profile",
+      "type": "object",
+      "properties": {
+        "displayName": { "type": "string" },
+        "email": { "type": "string" }
+      }
+    }
+  },
+  "firestore": {
+    "/users/{userId}/cart/default": {
+      "schema": { "$ref": "#/entities/Cart" },
+      "description": "User cart"
+    },
+    "/users/{userId}": {
+      "schema": { "$ref": "#/entities/UserProfile" },
+      "description": "User profile"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "REYPLACE.MX Smart Home & Security",
+  "description": "Tienda en línea asombrosa de Smart Home y seguridad inteligente con integración Google Home/Alexa, IA chat de soporte, pagos cripto/internacionales y UI neomórfica 3D luxury.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

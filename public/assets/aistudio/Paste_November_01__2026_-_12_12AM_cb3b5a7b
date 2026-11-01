@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="es-MX"><head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20261030-04-cb63f40","C":{"ABeeZee":"YADK31-VBBc,1","Abel":"YAHO2Ehol3g,0","Abhaya Libre":"YAFdJvwa-l0,0","Abril Fatface":"YACgEZbkUVE,0","Aclonica":"YAHO2OEKYj0,0","Acme":"YAHO2Gflqzo,0","Actor":"YAHO2N0IV_4,0","Adamina":"YAHO2Ko8ddg,0","Advent Pro":"YAFdJvNZdCk,0","Afacad":"YAHO2HaK_fU,0","Afacad Flux":"YAHO2DjbA6Y,0","Agrandir":"YAFdJpYuLss,0","Aileron":"YAFdJn5d8s0,0","Akshar":"YAGWNF0jApg,0","Alata":"YAD1aLikJo8,0","Albert Sans":"YAHO2HRfeh4,0","Alegreya":"YAFdJs07v-8,0","Alegreya Sans":"YAFdJvgJ5TU,0","Alegreya Sans SC":"YAFdJuaTEaM,0","Alegreya SC":"YACgEen8jXo,0","Aleo":"YAFdJg_txOU,0","Alex Brush":"YAE2gr0Mbng,0","Alexandria":"YAGVt-AWBcU,0","Alfa Slab One":"YACgEYS9sJU,0","Alice":"YALBszUSD-E,0","Allison":"YAG5KfE49h8,0","Allura":"YACgEap1YR0,0","Almarai":"YAFdJuZe0mI,0","Alumni Sans":"YAHO2DByoho,0","Amaranth":"YACgEaBTFMQ,0","Amatic SC":"YACgEbSBm0k,0","Amiri":"YAEWgjWFb1M,0","Amiri Quran":"YAHO2Enz6cg,0","Amita":"YADK309xYYo,1","Andika":"YACkoFAye4w,0","Anek Bangla":"YAGVuloYrvI,0","Anek Gujarati":"YAHO2NTD_LM,0","Anek Latin":"YAHO2C6lVnU,0","Anek Telugu":"YAHO2KVu8lI,0","Anonymous Pro":"YACgEV9owk4,0","Antic Slab":"YAHO2HJeTP0,0","Anton":"YACgEcYqQ-A,0","Antonio":"YAFdJjZxcpY,0","Anuphan":"YAHO2IhZ4E0,0","Anybody":"YAHO2MTsics,0","Aptos":"YAGi2jFvvq4,1","Arapey":"YADK32AK2Uk,1","Architects Daughter":"YACgEc9BFCs,0","Archivo":"YAHO2-t-jNE,0","Archivo Black":"YACgEZulLoA,0","Archivo Narrow":"YACgEa-oJH8,0","Aref Ruqaa":"YAHO2NMqGdM,0","Arial":"YAGyDvJ_4Ts,0","Arimo":"YACgEZ1cb1Q,0","Arsenal":"YADK3_DWcOc,0","Arvo":"YACgEf17hXM,0","Asap":"YAFdJr0OaFw,0","Asap Condensed":"YAD1fmY3NpE,0","Assistant":"YAFdtfahXt8,0","Atkinson Hyperlegible":"YAFge7Z-F6s,0","Atkinson Hyperlegible Next":"YAHO2IeQVB0,0","Audiowide":"YAHO2MsoafU,0","Avenir":"YAFcfmNq6UY,0","Azeret Mono":"YAHO2EIdDP0,0","Bacasime Antique":"YAHO2JjJq4o,0","Bad Script":"YADK31ojH6A,1","Bagel Fat One":"YAFyG3A11Bw,0","Bai Jamjuree":"YAFdJjI5olU,0","Baloo 2":"YAHO2IcQUcM,0","Baloo Bhaijaan 2":"YAHO2NwTj3Y,0","Baloo Da 2":"YAHO2LicHPY,0","Balsamiq Sans":"YAE3C_w4eo8,0","Bangers":"YAD5qTdjGKo,1","Barlow":"YAFdJsyuOPM,1","Barlow Condensed":"YAFdJljEuFc,0","Barlow Semi Condensed":"YAFdJu55qXI,0","Baskervville":"YAHO2JTYNKo,0","Beau Rivage":"YAHO2NDDGu0,0","Bebas Neue":"YACgESME5ew,0","Belanosima":"YAHO2KW8vyU,0","Bellefair":"YADSJ8TFXwA,0","Belleza":"YADK3w_fTc4,0","BenchNine":"YAHO2Gl7yMc,0","Berkshire Swash":"YACgEa7uPMI,0","Besley":"YAHO2BTXWYc,0","Bevan":"YACkoDaMIbc,0","Big Shoulders Display":"YAFdJs8L2aw,0","Birthstone":"YAGXhLyeE6I,0","Biryani":"YAFdtZ_PRAs,0","Bitter":"YACkoOF0Xck,0","BIZ UDPGothic":"YAGWY3VAK4Q,0","Black Ops One":"YACgEaY4FIU,0","Blinker":"YAFdJoBYX9o,0","Bodoni Moda":"YAHO2C7VUJE,0","Bowlby One":"YAHO2EunPos,0","Bowlby One SC":"YAHO2J38FUs,0","Bree Serif":"YACkoD1yZN0,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Bubblegum Sans":"YAHO2JdFc_U,0","Bungee":"YALBszL9wLA,0","Bungee Shade":"YACkoPYyrRk,0","Cabin":"YAFdJnEgsb0,0","Cabin Condensed":"YAHO2F-FVVw,0","Cairo":"YAFdtXpDzlQ,0","Caladea":"YAD1hHx0kVU,0","Calistoga":"YAD1aIFxe3I,1","Cambria":"YAFcfgNlM2Y,0","Cantarell":"YAHO2LSCGX4,0","Canva Sans":"YAFdJjTk5UU,1","Canva Sans Display":"YAFTjyMT8Hc,0","Caprasimo":"YAHO2PYTkbo,0","Capriola":"YALBs4liG7k,0","Cardo":"YACkoGIT9qo,0","Carlito":"YACkoIZXsrc,0","Carter One":"YACgEZJ1Flw,0","Castoro":"YAHO2cDcmVM,0","Catamaran":"YAFdJhPTLAc,0","Caveat":"YALBs2ploWQ,0","Caveat Brush":"YALBs8ZVRhw,0","Chakra Petch":"YAD1fCkY3IQ,0","Changa":"YAFdJtbG8fw,0","Changa One":"YAHO2WdsbtM,0","Chango":"YADK37RW0po,0","Charis SIL":"YAGvf-G3GGU,0","Charm":"YAD1b_s4o-w,0","Chelsea Market":"YAHO2UOd5sY,0","Chewy":"YACgEZfALnA,0","Chivo":"YAHO2WvGfDs,0","Chivo Mono":"YAHO2Qd3y5g,0","Chonburi":"YALBsz_RTwU,0","Cinzel":"YACgEeV8bIQ,0","Cinzel Decorative":"YAEe9XbWpNs,0","Climate Crisis":"YAFdJnbiwgQ,0","Comfortaa":"YAFdJoWmhxU,0","Comic Neue":"YAHO2VMiyZo,0","Commissioner":"YAHO2RRI-KE,0","Concert One":"YAFyG1vOkaw,0","Consolas":"YAFcfu6YYdE,0","Cookie":"YAHO2TxA9Mk,0","Cormorant Garamond":"YAFdJhX-538,0","Cormorant Infant":"YAHO2cgbXjc,0","Cormorant SC":"YAFdJg7KuRM,0","Cormorant Unicase":"YAHO2b4ohVo,0","Courgette":"YACgEU5nS9M,0","Courier New":"YAGzXiGs0_8,0","Courier Prime":"YAD1aFjegN8,0","Cousine":"YADK35VyDYU,0","Crete Round":"YAHO2Uu9SvI,0","Crimson Pro":"YAFdJsEGkW0,0","Crimson Text":"YAHO2RsfBzg,0","Cuprum":"YACkoB3fESg,0","Cutive Mono":"YAHO2cov6H4,0","Damion":"YAHO2SxDErM,0","Dancing Script":"YALBs2pfuW0,0","Darker Grotesque":"YAD1acp_tgc,1","DejaVu Sans":"YAFdtfpl0Yc,0","Delius":"YAHO2f1B8B4,0","Dhurjati":"YAHO2RElIME,0","Didact Gothic":"YALBs-mIj2o,0","DM Mono":"YAHO2SGpw0w,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Domine":"YAHO2bbCOA4,0","Dongle":"YAGXDU1dmuc,0","Doppio One":"YAHO2ckhWaI,0","Dosis":"YAFdte3F-n0,1","DotGothic16":"YAHO2fxQNHM,0","DynaPuff":"YAFyMRnxBDs,0","East Sea Dokdo":"YAHO2V39uyM,0","Eater":"YAHO2VpLF0c,0","EB Garamond":"YAFdJtfMD6Y,0","Economica":"YACgEeIOo5w,0","Eczar":"YAFdJrnVElk,0","Edo":"YADoUIDNzaE,1","El Messiri":"YAFdJoZarj8,0","Encode Sans":"YAHO2R-vLyo,0","Encode Sans Condensed":"YAHO2RQWhbg,0","Epilogue":"YAHO2WWHRqI,0","Exo":"YACgEf2dbI4,0","Exo 2":"YAFdJor4M6A,1","Fahkwang":"YAFdJp0SJos,0","Familjen Grotesk":"YAHO2ZriIzU,0","Faustina":"YAFdJnqy8Oc,0","Figtree":"YAHO2b-mV7A,0","Fira Code":"YAFdJsxBlTg,0","Fira Mono":"YAHO2bTKfjg,0","Fira Sans":"YAFdJnJKOPE,0","Fira Sans Condensed":"YAHMLJN-FcA,0","Fira Sans Extra Condensed":"YAHMLGqUb6Q,0","Fjalla One":"YAHO2VMyTKw,0","Fondamento":"YAHO2X_okmA,0","Forum":"YACgEcnnqB4,0","Fragment Mono":"YAHO2ZlYXZc,0","Francois One":"YADK3zbC6RM,0","Frank Ruhl Libre":"YAFdJiGIKxQ,0","Fraunces":"YAFdJpU7Kkk,0","Fredoka":"YACgEZml080,0","Fugaz One":"YAHO2f5L5K0,0","Funnel Display":"YAHO2TmVuEs,0","Funnel Sans":"YAHO2R0FK5U,0","Futura":"YAFcfgcNhWk,3","Gabarito":"YAHO2cD3JmI,0","Gaegu":"YAFdJj615Ls,0","Gantari":"YAHO2WveuBo,0","Garamond":"YAFcfhlhK9c,0","Geist":"YAHO2SfKS30,0","Geist Mono":"YAHO2XOe8v8,0","Gelasio":"YAHO2e426-k,0","Gentium Book Plus":"YAHO2b-adyU,0","Geologica":"YAHMLpZ3y5c,0","Geom":"YAHMLFz7unQ,0","Georama":"YAHO21l9KR8,0","Georgia":"YAGzXkO0pEM,0","GFS Didot":"YADK39vXpyU,0","Gilda Display":"YADK34sD2QM,0","Gilroy":"YAFcf0f10mQ,0","Gloock":"YAHO2WVhd0Q,0","Gloria Hallelujah":"YALBs50JjRs,0","Gochi Hand":"YACgEWWPgRQ,0","Goldman":"YAHO2TATES8,0","Golos Text":"YAHO2QlqAQk,0","Google Sans":"YAHO2dYZ4Uw,0","Google Sans Code":"YAHO2XdQwlA,0","Google Sans Flex":"YAHO2e8mtck,0","Gotham":"YAFcfr0ZwUA,0","Goudy Bookletter 1911":"YAHO2X7CqQQ,0","Gowun Batang":"YAGXDQtk-ic,0","Gowun Dodum":"YAGXDZ921io,0","Graduate":"YACgEajwz7Y,0","Grandstander":"YAHO2bN2hd8,0","Gravitas One":"YAHO2WtqHRw,0","Great Vibes":"YACgEX27qLg,0","Grenze":"YAFdJpFWOZM,0","Gruppo":"YACgEbcz8MU,0","Gudea":"YAHO2WlVs30,0","Hahmlet":"YAGXDTqs4Ac,0","Hammersmith One":"YACgEWNFnT4,0","Handlee":"YAHO2U9C-xI,0","Hanken Grotesk":"YAHO2VB9G0I,0","Heebo":"YAFdJqqaebw,0","Helvetica":"YAFcf7zkXN0,0","Hind Guntur":"YAFdJq1FbIc,0","Hind Madurai":"YAFdJtsMgQk,0","Hind Siliguri":"YAFdJodBWQk,0","Hind Vadodara":"YAFdJrnuAas,0","HK Grotesk":"YAFdJsjyMsM,0","Homemade Apple":"YADK3zBTjLs,0","Host Grotesk":"YAHO2VztvdY,0","Hubot Sans":"YAHO2cDVt0E,0","Huninn":"YAHO2dG1YxU,0","Ibarra Real Nova":"YAD1aDS1Jq8,0","IBM Plex Mono":"YAFdJkmvhGI,0","IBM Plex Sans":"YAFdJgT0SHI,0","IBM Plex Sans Arabic":"YAGVuEYCNg0,1","IBM Plex Sans Condensed":"YAFdJrPBof8,0","IBM Plex Sans JP":"YAGWY6rvaqo,0","IBM Plex Sans KR":"YAGXDbUrwEo,0","IBM Plex Sans Thai":"YAFdJkdZC28,0","IBM Plex Serif":"YAFdJt16xgA,0","IM Fell English":"YAHO2QB0QVo,0","IM Fell English SC":"YACgERmrc6I,0","IM Fell French Canon":"YAHO2bMvABs,0","Impact":"YAFcfnjI7Vk,0","Inclusive Sans":"YAGzRvSP2H0,0","Inconsolata":"YAHO2SpO-5g,0","Indie Flower":"YAHO2aaUih8,0","Instrument Sans":"YAHO2bKyaSQ,0","Instrument Serif":"YAHFeOnZNEk,0","Inter":"YAFdJvSyp_k,3","Inter Tight":"YAHO2Wv04Hw,0","Istok Web":"YAHO2XNFLkI,0","Italiana":"YAHO2Toik_w,0","Italianno":"YADK33wZXP4,1","Itim":"YAE0Z3ly4AQ,0","Jacques Francois":"YAHO2a5g66Q,0","Jersey 10":"YAHO2QXCPBA,0","Jersey 25":"YAHO2b0HdSo,0","JetBrains Mono":"YAFdJksXcAk,0","Josefin Sans":"YAFdJjvw9Ps,0","Josefin Slab":"YACgEQmaEIc,0","Jost":"YAHO2TSelXg,0","Jua":"YADK3-gZSDU,0","Julius Sans One":"YACgET-7cBI,0","Jura":"YAFdJmtyccY,0","Kaisei Decol":"YAGWY5xJxfk,0","Kalam":"YAFdJrEg2ic,0","Kanit":"YAHO2TvSf7E,0","Kantumruy Pro":"YAHO2SVqwqY,0","Karla":"YAHO2V2NSXM,0","Kaushan Script":"YACgEbGmrJs,0","Khand":"YAFdJm18w3g,0","Khula":"YAFdJvaOkWI,0","Kiwi Maru":"YAFdJmm1njU,0","Klee One":"YAHO2dadxts,0","Knewave":"YACgEYSBEEA,0","Kodchasan":"YAFdJmfmzeo,0","Kosugi Maru":"YAEhL82apSM,0","Krub":"YAFdJl9ACwk,0","Kumbh Sans":"YAHO2UjzjpM,0","La Belle Aurore":"YAHO2QKdLHU,0","Lalezar":"YACkoB188Y0,0","Lato":"YAFdJuFCnaw,0","League Gothic":"YACgEZ1OEPI,0","League Spartan":"YACgEcnJpjs,0","Leckerli One":"YAGX4ddZAAg,0","Lemonada":"YAFdtQVfQCk,0","Lexend":"YAHO2SCkHoU,0","Lexend Deca":"YAD9UdTHECk,0","Lexend Exa":"YAD9UUZHL7I,0","Lexend Giga":"YAD9UYAqrOc,0","Lexend Mega":"YAD9UdrjgZw,0","Lexend Zetta":"YAD9UYrErMw,0","Libre Baskerville":"YACgEUFdPdA,0","Libre Bodoni":"YAHO2fbN094,0","Libre Caslon Display":"YAHO2XhLmt0,0","Libre Caslon Text":"YAHO2USylHk,0","Libre Franklin":"YAFdJr3SNlU,1","Lilita One":"YACgEblklxo,0","Limelight":"YACgEUpkTXE,0","LINE Seed JP":"YAHO2d8yXa4,0","Literata":"YAD1b0SpOHQ,0","Lobster":"YAD8SnSjSFI,0","Lobster Two":"YACgEesdoec,0","Londrina Solid":"YAFdJnyMeQE,0","Lora":"YACgEXvxf8Q,0","Luckiest Guy":"YADK4PnlFRs,0","Lusitana":"YAHO2SveFfM,0","LXGW WenKai TC":"YAHO2ehQ5_o,0","M PLUS 1p":"YAHO2fozO7I,0","M PLUS 2":"YAHO2RUGZcQ,0","Ma Shan Zheng":"YAD1b3yES34,0","Mada":"YAFd-HxC1Y0,0","Maitree":"YAFdJh4v5pY,0","Mali":"YAFdJh7OuNE,0","Manrope":"YAHO2b2feC4,0","Mansalva":"YAD1aZCCYU8,1","Marcellus":"YADK4L2nGbg,0","Marck Script":"YALBs9DBETo,0","Martel":"YAFdtY7FRH8,1","Martian Mono":"YAHO2YhUMkk,0","Mate":"YAHO2eaPuMk,0","Maven Pro":"YAFdJgCyb_c,0","Mea Culpa":"YAHO2UQx4WU,0","MedievalSharp":"YAHO2XoH9qQ,0","Megrim":"YACgEQu0pLY,0","Meiryo":"YAGmJPEz0BM,0","Merienda":"YAGXhISLJkY,0","Merriweather":"YACgEXvHxxs,0","Merriweather Sans":"YAFdJorZgto,1","Michroma":"YADK4IYX8vY,0","Mitr":"YAFdJh-DKf0,0","Mona Sans":"YAHO2XGz2BM,0","Monda":"YADK34lACd0,1","Monoton":"YALBs_hWWG8,0","Mont":"YAFdJgul-2U,0","Montserrat":"YAFdtQi73Xs,0","Montserrat Alternates":"YAHO2d5URdI,0","Mooli":"YAHO2QudnvU,0","More Sugar":"YAFdJkVWBPo,1","Mountains of Christmas":"YAHO2f6R-YA,0","Mr Dafoe":"YACgEbw4BXM,0","Mrs Saint Delafield":"YAHO2Tnt53k,0","Ms Madi":"YAHO2SBc4rI,0","Mukta":"YAFdJjsZaSM,0","Muli":"YAFdtZAC0Mk,0","Mulish":"YAHO28rytyw,0","Nanum Myeongjo":"YAFdJqiu4VY,0","Neucha":"YAEkTBQffFg,0","Neuton":"YAFdtcDBvdA,0","New Rocker":"YAHO2YI8rWg,0","News Cycle":"YACkoEMGWek,0","Nothing You Could Do":"YAHO2WqRm_c,0","Noticia Text":"YACkoDm0xlE,0","Noto Color Emoji":"YAGumpcTCok,0","Noto Kufi Arabic":"YACkoGW2dTA,0","Noto Naskh Arabic":"YACkoI8Oj1c,0","Noto Nastaliq Urdu":"YAGU_Q5u0w4,0","Noto Sans":"YACkoCjjZNk,0","Noto Sans Bengali":"YAFdJjnhMdI,0","Noto Sans Devanagari":"YAFdJnKmmqM,0","Noto Sans Display":"YAHO2eyZBeY,0","Noto Sans Ethiopic":"YAHO20DfUMM,0","Noto Sans Georgian":"YACkoFKxqWs,0","Noto Sans HK":"YAHO2fCytzw,0","Noto Sans JP":"YAFdJiHXlcI,0","Noto Sans Khmer":"YACkoFdRIJM,0","Noto Sans KR":"YAGsojZj-RQ,0","Noto Sans Lao":"YAHO2f6jVpw,0","Noto Sans Lao Looped":"YAHO2TSQjpA,0","Noto Sans Malayalam":"YACkoMzSo98,0","Noto Sans Mono":"YAHO2TFVtN0,0","Noto Sans Myanmar":"YACkoPHEdMk,0","Noto Sans SC":"YAHO2hDCDFM,0","Noto Sans Sinhala":"YACkoJiU_Ak,0","Noto Sans Symbols":"YAHO2n0Zh0w,0","Noto Sans Tamil":"YAHO2r9jkew,0","Noto Sans TC":"YAHO2pzGHBE,0","Noto Sans Telugu":"YAHO2uFAQs4,0","Noto Serif":"YACkoGNq-XY,0","Noto Serif Bengali":"YAGVuu_j8c8,0","Noto Serif Devanagari":"YAGWNWUpY9s,0","Noto Serif Display":"YAFdJllHsUM,0","Nunito":"YAFdJoNRMmU,1","Nunito Sans":"YAFdtQJYB9w,1","Old Standard TT":"YAHO2lhtDcg,0","Oleo Script":"YACgEQQ14jI,0","Onest":"YAHO2kaArOY,0","Open Sans":"YAFdJt8dAY0,1","Open Sans Condensed":"YAD7Rf0lmm4,1","Open Sans Hebrew":"YAFdJlARYMY,0","Optima":"YAFcf0Fltlg,0","Orbit":"YAFyMQm0Z54,0","Orbitron":"YAHO2tXXH_o,0","Oswald":"YACgEQY10lw,0","Outfit":"YAHO2nVlg14,0","Overpass":"YAFdJhmdIMM,1","Oxanium":"YAHO2kINDn0,0","Oxygen":"YAHO2nOU31A,0","Pacifico":"YADLjORQ1u4,0","Pangolin":"YADK4DH4-fM,0","Parisienne":"YACgERSYqTw,0","Parkinsans":"YAHO2j-ZSEo,0","Passion One":"YAFdJo9cFec,0","Pathway Gothic One":"YACkoMQo7Mc,0","Patrick Hand":"YAHO2swKcgg,0","Patua One":"YAHO2qRZWLE,0","Paytone One":"YALBs8J6By4,0","Permanent Marker":"YACgEcB-r-s,0","Petrona":"YADK4PUbnVg,1","Philosopher":"YAEkTCvkg7Q,0","Pinyon Script":"YACgEQzTJgs,0","Pirata One":"YALBs3j2Xx0,0","Pixelify Sans":"YAHO2v5ARTA,0","Play":"YADK4EFto8o,0","Playball":"YAHO2hWLQJ0,0","Playfair Display":"YAFdJhem5V8,1","Playfair Display SC":"YACgESE7eJQ,0","Playwrite VN":"YAHO2_bSM7Y,0","Plus Jakarta Sans":"YAHO2gdhi18,0","Poiret One":"YAHO2nweLas,0","Pontano Sans":"YAHO2t91rWw,0","Poppins":"YAFdJjbTu24,1","Prata":"YACgES4qGnk,0","Press Start 2P":"YAFyGr-8pmQ,0","Pridi":"YAFdJmJ3gqA,0","Prompt":"YAFdJmA6sOY,0","Proxima Nova":"YAFcfjveRFU,0","Proxima Nova Condensed":"YAFcfiSm_SA,0","Proza Libre":"YAHO2nv0NKc,0","PT Mono":"YAHO2lnK_7w,0","PT Sans":"YACgEYbsV-E,0","PT Sans Caption":"YAHO2oZpTQc,0","PT Sans Narrow":"YAHO2glZymI,0","PT Serif":"YACgEcU7Qg4,0","Public Sans":"YAFdJj8NdaU,1","Pyidaungsu":"YACkoGGC7sA,0","Quantico":"YAHO2me4bVc,0","Quattrocento":"YACgEcL5b3s,0","Quattrocento Sans":"YAHO2vuaC0Y,0","Questrial":"YADK4LSvvyE,1","Quicksand":"YAFdJpYtCxE,1","Racing Sans One":"YACgEbcqMPM,0","Radio Canada":"YAHO2qxyljs,0","Radio Canada Big":"YAHO2r7P8wg,0","Rajdhani":"YAFdJoWaWgo,0","Raleway":"YAFdJhmxbVQ,1","Ramabhadra":"YACkoN_hhSs,0","Rammetto One":"YAHO2nAqWuQ,0","Rasa":"YAFdJg-9rGY,0","Readex Pro":"YAGVt3RBO3c,0","Recursive":"YAHO2oZn01g,0","Red Hat Display":"YAD1bzs0p0Y,0","Red Hat Mono":"YAHO2gB0kV8,0","Red Hat Text":"YAHO21kkNWg,0","Reddit Sans":"YAHO2kKAR-8,0","Reem Kufi":"YADSJ0ceOYQ,0","Reenie Beanie":"YAHO2s4qTnk,0","Rethink Sans":"YAHO2q9_FzY,0","Righteous":"YAHO2oo4-So,0","Roboto":"YACgEev4gKc,0","Roboto Condensed":"YACgEan-tYE,0","Roboto Flex":"YAHO2nqK4E8,0","Roboto Mono":"YAFdJkvp3-k,0","Roboto Slab":"YAFdJswIKAg,0","Rock Salt":"YAHO2vFSVxE,0","Rockwell":"YAFcfyVZnN0,0","Rokkitt":"YAFdJnlBl3o,0","Ropa Sans":"YACkoCA_LhY,0","Rowdies":"YAFyL2wl4FI,0","Rozha One":"YACkoMIfZVA,0","Rubik":"YAFdJsMWVVc,0","Rubik Dirt":"YAFyHRD_ZDY,0","Rubik Mono One":"YAHO2qtMuC0,0","Rubik Wet Paint":"YAHO2mLD_X0,0","Ruda":"YAFdJuuBNyM,1","Rye":"YACgEdQP21k,0","Sacramento":"YACgEf5ivwU,0","Saira":"YAFdJk33d3s,0","Saira Condensed":"YAFdJuBuAxg,0","Saira Extra Condensed":"YAFdJiQUvWc,0","Saira Semi Condensed":"YAHO2gfd5g8,0","Saira Stencil One":"YAD1aV1l2HE,0","Sanchez":"YACgEbBJLy8,0","Sarabun":"YAFdJssSnME,0","Sarala":"YADK4LF5xeY,0","Satisfy":"YACgEf5XTk0,0","Sawarabi Mincho":"YAD1faq7yjk,0","Scheherazade New":"YAHO2sxcjiY,0","Schibsted Grotesk":"YAHO2sWydRk,0","Segoe Script":"YAF3uTF1s5I,0","Segoe UI":"YAHNdRD1Klw,0","Sen":"YAHO2h5vrRE,0","Shadows Into Light":"YAHO2tztN1k,0","Share Tech":"YAHO2q4NPs0,0","Share Tech Mono":"YAHO2oHio98,0","Shippori Mincho":"YAGWZNRJkO8,0","Shippori Mincho B1":"YAGWZJnXF8c,0","Shrikhand":"YACkoEA0Kc0,0","Signika":"YACgEfiK7GI,0","Signika Negative":"YAHO2rWYEng,0","Silkscreen":"YAHO2rdlQ_o,0","Skranji":"YAHO2uPivlQ,0","Slabo 13px":"YAHO2hvaP1I,0","Slabo 27px":"YAHO2n--yeE,0","Smooch Sans":"YAHO2tPdb20,0","Sniglet":"YACgEUJSCy8,0","Sofia":"YAHO2kq3qHg,0","Sofia Sans":"YAHMLUINeco,0","Sofia Sans Condensed":"YAHMLQmSo-Y,0","Sofia Sans Extra Condensed":"YAHMLV0fp0c,0","Sora":"YAHO2rDTR1E,0","Sorts Mill Goudy":"YADK4Fi0R2c,0","Source Code Pro":"YAHO2tzIJbg,0","Source Sans 3":"YAG4lO1Mj10,0","Source Sans Pro":"YACgEQzTv38,0","Source Serif Pro":"YACgEfdj394,0","Space Grotesk":"YAHO2sjPCSM,0","Space Mono":"YADW1-vpsoc,0","Special Elite":"YACgEYVlm9Q,0","Special Gothic Expanded One":"YAHO2oaS0m0,0","Spectral":"YAHO2rVUHIM,0","Spline Sans":"YAHO2rZC9CE,0","Squada One":"YADK4PDlAAM,0","Sriracha":"YALBs4sJbXs,0","Staatliches":"YAD1bzJCL-s,0","Stardos Stencil":"YADK4Mu_Xj0,1","STIX Two Text":"YAHO2joycuk,0","Suez One":"YACkoJMi7_c,0","Syncopate":"YAHO2iXpgDY,0","Syne":"YAHML9oLRPc,0","Tahoma":"YAFcfipOFgg,0","Tajawal":"YAFdJg45t1g,0","Tangerine":"YADK4L8oUVI,0","Taviraj":"YAFdJjquxqU,0","Teko":"YAFdJsF6lbU,0","Tektur":"YAHMLdkk1tM,0","Tenor Sans":"YACgEVY5j_w,0","Tilt Warp":"YAHO2uqld84,0","Times New Roman":"YAGzXW3gftg,0","Tinos":"YACkoJyNZF4,0","Tiro Bangla":"YAGVuiG7jnE,0","Tiro Devanagari Hindi":"YAGWNCjUq0o,0","Titan One":"YAHO2v8eA3A,0","Titillium Web":"YAFdtTOE9xo,0","Tomorrow":"YAFdJlW65k4,0","Traditional Arabic":"YAGLszSchGc,0","Trebuchet MS":"YAFcfrglpVA,0","Trocchi":"YACgEV-yq04,0","Turret Road":"YAHO2pKQLYQ,0","Ubuntu":"YACgERDU--Q,0","Ubuntu Condensed":"YAHO2nCaahY,0","Ubuntu Mono":"YAHO2g6B-Uo,0","Ubuntu Sans":"YAHO2kypvWc,0","Ultra":"YACgEWHSPx0,0","Unbounded":"YAHO2rkdmWY,0","Unica One":"YALBs74Pdjc,0","UnifrakturCook":"YAHO2srzKxY,0","UnifrakturMaguntia":"YACgEZRHDPA,0","Unna":"YADK4PtOh7E,0","Urbanist":"YAHO2o1IFy0,0","Varela":"YAHO2gPi4IU,0","Varela Round":"YALBs2IK6rw,0","Vazirmatn":"YAHO2z1lH5c,0","Verdana":"YAGzXTctYtQ,0","Vidaloka":"YACgEdRnAX0,0","Viga":"YAHO2v8Lzbg,0","Volkhov":"YAHO2uWq-qg,0","Vollkorn":"YAFdJli9wSA,0","VT323":"YACgEYI9BCI,0","Wix Madefor Display":"YAHO2o-Qfis,0","Wix Madefor Text":"YAHO2rU16Qc,0","Work Sans":"YAGXhLOKv44,0","Yanone Kaffeesatz":"YAFdtbpuM0E,0","Yantramanav":"YAFdJuZAcfY,0","Yatra One":"YACkoJ228Ho,0","Yellowtail":"YACgEYG4kG4,0","Yeseva One":"YALBs4GWnJw,0","Ysabeau":"YAHMLjcdG48,0","Ysabeau Office":"YAHO2uUYDYI,0","Yuji Boku":"YAFGHcN5e_Y,0","Yusei Magic":"YAEhL8RNAMk,0","Zain":"YAHO2lC1Xkw,0","Zalando Sans":"YAHO2k5OK-M,0","Zalando Sans Expanded":"YAHO2h6OPds,0","Zen Kaku Gothic Antique":"YAHO2u8F_xk,0","Zen Kaku Gothic New":"YAHO2tS_yps,0","Zen Maru Gothic":"YAFdJgMrcdw,0","Zen Old Mincho":"YAHO2tMwaEs,0","Zeyada":"YAHO2lP62P0,0","Zilla Slab":"YAFdJpPotmI,0"}}');</script><script src="/_sdk/640c2c9485552aa0.telemetry_sdk.js" integrity="sha512-x7sJNwBS9reCVXham9nBdUp9EtXT/bbNZQpT1cWbDa+n6qr1jm8WdBMFUK+gVfm5CtLZVOtKSGRXT0C+rD4Hdw=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>REYPLACE.MX · Tecnología que transforma</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root{--night:#07112b;--panel:#101e3d;--line:#344b75;--cyan:#70e9ff;--muted:#b6c7e3;--pink:#ff78cb}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:#f6f9ff;font-family:"DM Sans",sans-serif}
+    .app-shell{width:100%;min-width:0;overflow:hidden;background:radial-gradient(ellipse at 86% 4%,#30346f 0%,transparent 27%),radial-gradient(ellipse at 0% 42%,#15385b 0%,transparent 32%),#07112b}
+    .page-wrap{width:100%;max-width:1280px;margin:auto;padding-inline:clamp(18px,4vw,52px)}
+    .glass{background:#101e3df2;border:1px solid #344b75;box-shadow:0 18px 52px #02081764}
+    .eyebrow{font-size:11px;font-weight:800;letter-spacing:.21em;text-transform:uppercase;color:var(--cyan)}
+    .muted{color:var(--muted)}.section-gap{padding-top:clamp(64px,8vw,108px)}
+    .section-title{font-weight:800;letter-spacing:-.045em;line-height:1.13}
+    .primary-btn,.secondary-btn,.chip{transition:transform .22s,box-shadow .22s,border-color .22s,background .22s}
+    .primary-btn{background:#70e9ff;color:#07112b;font-weight:800;box-shadow:0 9px 26px #45cfff29}
+    .secondary-btn{background:#142448;color:#edf6ff;border:1px solid #5872a7;font-weight:700}
+    .primary-btn:hover,.secondary-btn:hover,.chip:hover{transform:translateY(-2px);box-shadow:0 12px 28px #36c9ff29}
+    .chip{border:1px solid #46618b;background:#122342;color:#e4f2ff;white-space:nowrap}
+    .chip[aria-pressed=true]{border-color:#70e9ff;background:#1e455d;box-shadow:inset 0 0 0 1px #70e9ff55}
+    .hero-art{position:relative;isolation:isolate}
+    .hero-art:before{content:"";position:absolute;inset:11%;z-index:-1;border-radius:50%;background:conic-gradient(#70e9ff99,#7069ff88,#ff78cb88,#70e9ff99);filter:blur(45px);animation:orbit 18s linear infinite}
+    .hero-frame{border:1px solid #7085ae;border-radius:36px;background:#0e1a38;box-shadow:0 34px 85px #020617b5,0 0 0 8px #a8ccff0a;overflow:hidden}
+    .hero-frame img{width:100%;height:clamp(280px,34vw,480px);object-fit:contain;display:block}
+    .grid-lines{background-image:linear-gradient(#82b5ff0b 1px,transparent 1px),linear-gradient(90deg,#82b5ff0b 1px,transparent 1px);background-size:35px 35px}
+    .product-card{display:flex;min-width:0;flex-direction:column;overflow:hidden;transition:transform .25s,border-color .25s,box-shadow .25s}
+    .product-card:hover{transform:translateY(-6px);border-color:#70e9ff;box-shadow:0 25px 52px #020816aa,0 0 26px #61d8ff24}
+    .product-card[hidden]{display:none!important}
+    .product-media{position:relative;overflow:hidden;background:radial-gradient(circle at 50% 50%,#375185,#101d3b 76%);padding:9px}
+    .product-media img{width:100%;height:210px;object-fit:cover;border-radius:18px;display:block;transition:transform .4s}
+    .product-card:hover img{transform:scale(1.045)}
+    .field{width:100%;background:#0b1936;border:1px solid #40547c;color:#fff;border-radius:14px;padding:12px 14px;outline:none}
+    .field:focus{border-color:#70e9ff;box-shadow:0 0 0 3px #54dcff33}select.field,input[type=date]{color-scheme:dark}
+    .overlay,.drawer-backdrop{position:fixed;inset:0;background:#02091bdb;backdrop-filter:blur(9px)}
+    .overlay{z-index:60;display:grid;place-items:center;padding:16px}.drawer-backdrop{z-index:70}
+    .drawer{position:fixed;inset:0 0 0 auto;z-index:71;width:min(100%,490px);background:#0c1935;border-left:1px solid #5874a2;box-shadow:-24px 0 70px #0009;display:flex;flex-direction:column}
+    .drawer-scroll{overflow:auto;flex:1}
+    [hidden],.overlay[hidden],.drawer[hidden],.drawer-backdrop[hidden]{display:none!important}
+    :focus-visible{outline:3px solid #8ce9ff!important;outline-offset:3px}
+    summary{cursor:pointer}@keyframes orbit{to{transform:rotate(360deg)}}
+    @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+    .reveal{animation:rise .65s both}
+    @media(max-width:780px){.desktop-nav{display:none!important}.product-media img{height:170px}.hero-frame img{height:310px}}
+    @media(max-width:390px){.product-media img{height:135px}.product-actions{grid-template-columns:1fr}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
+  </style>
+  <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js" type="text/javascript"></script>
+  <script src="/_sdk/8fed440c6f94b5da.data_sdk.js" type="text/javascript" integrity="sha512-hrvcCCJ6nkL5gG3mdqPDbgyAf9a/fg/zBF51sU5N3rM1WmeSu8K36+6wn9TZeAZrLIonoaPBeVyFsXxXxZjq0w=="></script>
+  <script src="/_sdk/dc9eaed14b563eb8.editing_sdk.js" type="text/javascript" integrity="sha512-U1pSpFrQ86eOO8lqZ1xWYnEMHIYQODbWTwR3Q90z8aWFeEUSJieZRq+g7FYNvauPQ0rG84s3SFjWyB/NxzRXNA=="></script>
+  <script src="/_sdk/dfeb017e55db4863.resizing_sdk.js" type="text/javascript" integrity="sha512-kbPBNN/FAxsctln1jqNvXyIdF7mIhQx0C+eGGC2IF3mNjNZZcftDT1wFztswSSk4KXRWYHIC3uA9NMfJV4IVUw=="></script>
+ </head>
+ <body data-template-id="__page-root" style="background: rgb(7, 17, 43);">
+  <div class="app-shell">
+   <header class="sticky top-0 z-40 border-b border-[#31466b] bg-[#08152df2] backdrop-blur-xl">
+    <div class="page-wrap flex min-h-[74px] flex-wrap items-center gap-3 py-3"><a href="#inicio" class="shrink-0 font-extrabold tracking-[.06em] no-underline"><span aria-hidden="true" class="mr-2 text-[#70e9ff]">♛</span><span data-template-id="brand-name" class="canva-text" style="color: rgb(255, 255, 255); font-weight: 800; font-style: normal; font-size: 16px;">REYPLACE.MX</span></a>
+     <nav class="desktop-nav ml-auto flex items-center gap-5 text-sm font-semibold text-[#c8d6f0]" aria-label="Navegación principal"><a href="#categorias">Categorías</a><a href="#catalogo">Productos</a><a href="#negocios">Negocios</a><a href="#agendar">Agendar</a><a href="#contacto">Contacto</a>
+     </nav>
+     <form id="header-search" class="ml-auto flex min-w-[145px] flex-1 items-center gap-2 rounded-2xl border border-[#3c527b] bg-[#11213f] px-3 md:ml-0 md:max-w-[220px]" role="search"><label for="search-input" class="sr-only">Buscar productos</label> <input id="search-input" data-template-id="search-placeholder" class="canva-input min-w-0 w-full bg-transparent py-2.5 text-sm text-white outline-none" type="search" autocomplete="off" placeholder="Buscar tecnología…" style="font-weight: 400; font-style: normal; font-size: 16px;"> <button type="submit" aria-label="Buscar productos" class="text-[#80dfff]"><i data-lucide="search" class="h-4 w-4"></i></button>
+     </form><button id="open-cart" type="button" class="secondary-btn flex items-center gap-2 rounded-2xl px-3 py-2.5 text-sm" aria-label="Abrir carrito"> <i data-lucide="shopping-bag" class="h-4 w-4"></i><span data-template-id="cart-label" class="canva-text hidden sm:inline" style="color: rgb(237, 246, 255); font-weight: 400; font-style: normal; font-size: 16px;">Carrito</span><span id="cart-count" class="rounded-full bg-[#70e9ff] px-1.5 text-[#07142a]">0</span> </button>
+    </div>
+   </header>
+   <main id="inicio">
+    <section class="page-wrap grid-lines grid items-center gap-10 py-14 md:grid-cols-[1.05fr_.95fr] md:py-20">
+     <div class="reveal">
+      <p data-template-id="hero-kicker" class="canva-text eyebrow mb-5" style="color: rgb(112, 233, 255); font-weight: 400; font-style: normal; font-size: 16px;">ECOSISTEMA DIGITAL · MÉXICO</p>
+      <h1 data-template-id="hero-title" class="canva-text max-w-[730px] font-extrabold leading-[1.07] tracking-[-.055em]" style="color: rgb(255, 255, 255); font-weight: 800; font-style: normal; font-size: 64px;">Conectamos. Innovamos. Transformamos.</h1>
+      <p data-template-id="hero-description" class="canva-text muted mt-6 max-w-[570px] leading-relaxed" style="color: rgb(182, 199, 227); font-weight: 400; font-style: normal; font-size: 18px;">Tecnología inteligente para vivir mejor y hacer crecer tu negocio. Todo conectado, a tu manera.</p>
+      <div class="mt-8 flex flex-wrap gap-3"><a data-template-id="hero-shop" href="#catalogo" class="canva-button primary-btn rounded-2xl px-6 py-4 no-underline" style="background: rgb(112, 233, 255); color: rgb(7, 17, 43); font-weight: 800; font-style: normal; font-size: 16px;">Explorar productos →</a> <a data-template-id="hero-business" href="#negocios" class="canva-button secondary-btn rounded-2xl px-6 py-4 no-underline" style="background: rgb(20, 36, 72); color: rgb(237, 246, 255); font-weight: 700; font-style: normal; font-size: 16px;">Para negocios</a>
+      </div>
+      <p data-template-id="hero-note" class="canva-text muted mt-7 text-sm" style="color: rgb(182, 199, 227); font-weight: 400; font-style: normal; font-size: 14px;">SMART HOME / SEGURIDAD / AUTOMATIZACIÓN / REDES</p>
+     </div>
+     <div class="hero-art reveal mx-auto w-full max-w-[490px] p-4">
+      <div class="hero-frame">
+       <img data-template-id="brand-image" class="canva-image" loading="lazy" src="canva://MAHZpW3pXSY/1" alt="Emblema de REYPLACE.MX con corona y letra R luminosa sobre fondo azul marino">
+      </div>
+     </div>
+    </section>
+    <section id="categorias" class="page-wrap section-gap">
+     <p data-template-id="categories-kicker" class="canva-text eyebrow" style="color: rgb(112, 233, 255); font-weight: 400; font-style: normal; font-size: 16px;">EXPLORA POR UNIVERSO</p>
+     <h2 data-template-id="categories-title" class="canva-text section-title mt-3" style="color: rgb(246, 249, 255); font-weight: 800; font-style: normal; font-size: 24px;">Tecnología para cada espacio.</h2>
+     <div class="mt-6 flex gap-3 overflow-x-auto pb-3" aria-label="Categorías rápidas"><button type="button" data-category="all" class="chip rounded-2xl px-5 py-4 font-semibold" aria-pressed="true"><span data-template-id="category-all" class="canva-text" style="color: rgb(228, 242, 255); font-weight: 700; font-style: normal; font-size: 16px;">Todo</span></button> <button type="button" data-category="Smart Home" class="chip rounded-2xl px-5 py-4 font-semibold" aria-pressed="false"><span data-template-id="category-home" class="canva-text" style="color: rgb(228, 242, 255); font-weight: 700; font-style: normal; font-size: 16px;">✳ Smart Home</span></button> <button type="button" data-category="Seguridad" class="chip rounded-2xl px-5 py-4 font-semibold" aria-pressed="false"><span data-template-id="category-security" class="canva-text" style="color: rgb(228, 242, 255); font-weight: 700; font-style: normal; font-size: 16px;">◎ Seguridad</span></button> <button type="button" data-category="Automatización" class="chip rounded-2xl px-5 py-4 font-semibold" aria-pressed="false"><span data-template-id="category-automation" class="canva-text" style="color: rgb(228, 242, 255); font-weight: 700; font-style: normal; font-size: 16px;">✦ Automatización</span></button> <button type="button" data-category="Redes" class="chip rounded-2xl px-5 py-4 font-semibold" aria-pressed="false"><span data-template-id="category-networks" class="canva-text" style="color: rgb(228, 242, 255); font-weight: 700; font-style: normal; font-size: 16px;">⌁ Redes</span></button> <button type="button" data-category="Negocios" class="chip rounded-2xl px-5 py-4 font-semibold" aria-pressed="false"><span data-template-id="category-business" class="canva-text" style="color: rgb(228, 242, 255); font-weight: 700; font-style: normal; font-size: 16px;">▣ Negocios</span></button>
+     </div>
+    </section>
+    <section id="catalogo" class="page-wrap section-gap">
+     <div class="flex flex-wrap items-end justify-between gap-4">
+      <div>
+       <p data-template-id="catalog-kicker" class="canva-text eyebrow" style="color: rgb(112, 233, 255); font-weight: 400; font-style: normal; font-size: 16px;">CATÁLOGO REYPLACE</p>
+       <h2 data-template-id="catalog-title" class="canva-text section-title mt-3" style="color: rgb(246, 249, 255); font-weight: 800; font-style: normal; font-size: 24px;">Encuentra tu próxima conexión.</h2>
+      </div><span id="results-count" class="muted text-sm" aria-live="polite"></span>
+     </div>
+     <div class="glass mt-7 grid gap-4 rounded-[26px] p-5 md:grid-cols-3">
+      <div>
+       <label data-template-id="filter-category-label" for="category-filter" class="canva-text mb-2 block text-sm font-semibold" style="color: rgb(246, 249, 255); font-weight: 600; font-style: normal; font-size: 16px;">Categoría</label><select id="category-filter" class="field"><option value="all">Todas las categorías</option><option>Smart Home</option><option>Seguridad</option><option>Automatización</option><option>Redes</option><option>Negocios</option></select>
+      </div>
+      <div>
+       <label for="price-filter" class="mb-2 block text-sm font-semibold"><span data-template-id="filter-price-label" class="canva-text" style="color: rgb(246, 249, 255); font-weight: 600; font-style: normal; font-size: 16px;">Precio máximo</span>: <span id="price-value">$15,000</span></label><input id="price-filter" type="range" min="500" max="15000" step="500" value="15000" class="mt-3 w-full accent-[#70e9ff]">
+      </div>
+      <div>
+       <label data-template-id="sort-label" for="sort-filter" class="canva-text mb-2 block text-sm font-semibold" style="color: rgb(246, 249, 255); font-weight: 600; font-style: normal; font-size: 16px;">Ordenar por</label><select id="sort-filter" class="field"><option value="featured">Destacados</option><option value="low">Precio: menor a mayor</option><option value="high">Precio: mayor a menor</option><option value="name">Nombre: A–Z</option></select>
+      </div>
+     </div>
+     <div id="product-grid" class="mt-7 grid grid-cols-2 gap-4 lg:grid-cols-4">
+      <article data-product="bulb" data-template-id="product-bulb-card" class="canva-card product-card glass rounded-[26px]" style="background: rgb(16, 30, 61);">
+       <div class="product-media">
+        <img data-template-id="product-bulb-image" class="canva-image" loading="lazy" src="https://images.pexels.com/photos/28940484/pexels-photo-28940484.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Bombilla LED con iluminación de neón azul y rosa"><span data-template-id="product-bulb-tag" class="canva-tag absolute left-4 top-4 rounded-full px-2.5 py-1 text-xs font-bold" style="background: rgb(85, 32, 77); color: rgb(255, 212, 244); font-weight: 400; font-style: normal; font-size: 16px;">OFERTA</span>
+       </div>
+       <div class="flex flex-1 flex-col p-4">
+        <h3 data-template-id="product-bulb-name" class="canva-text font-bold" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 19px;">Foco inteligente RGB</h3>
+        <p data-template-id="product-bulb-desc" class="canva-text muted mt-2 flex-1 text-sm" style="color: rgb(182, 199, 227); font-weight: 400; font-style: normal; font-size: 14px;">Color y ambiente desde tu celular.</p>
+        <p data-template-id="product-bulb-price" class="canva-text mt-4 font-extrabold" style="color: rgb(131, 234, 255); font-weight: 800; font-style: normal; font-size: 16px;">$399 MXN</p>
+        <div class="product-actions mt-4 grid gap-2">
+         <button type="button" class="detail-btn secondary-btn rounded-xl px-3 py-2 text-sm">Ver detalles</button><button type="button" class="add-btn primary-btn rounded-xl px-3 py-2 text-sm">Añadir al carrito</button>
+        </div>
+       </div>
+      </article>
+      <article data-product="camera" data-template-id="product-camera-card" class="canva-card product-card glass rounded-[26px]" style="background: rgb(16, 30, 61);">
+       <div class="product-media">
+        <img data-template-id="product-camera-image" class="canva-image" loading="lazy" src="https://images.pexels.com/photos/33104382/pexels-photo-33104382.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Cámara blanca de seguridad doméstica sobre una superficie de madera"><span data-template-id="product-camera-tag" class="canva-tag absolute left-4 top-4 rounded-full px-2.5 py-1 text-xs font-bold" style="background: rgb(23, 61, 86); color: rgb(168, 235, 255); font-weight: 400; font-style: normal; font-size: 16px;">DESTACADO</span>
+       </div>
+       <div class="flex flex-1 flex-col p-4">
+        <h3 data-template-id="product-camera-name" class="canva-text font-bold" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 19px;">Cámara Wi-Fi 360°</h3>
+        <p data-template-id="product-camera-desc" class="canva-text muted mt-2 flex-1 text-sm" style="color: rgb(182, 199, 227); font-weight: 400; font-style: normal; font-size: 14px;">Monitoreo panorámico para tu espacio.</p>
+        <p data-template-id="product-camera-price" class="canva-text mt-4 font-extrabold" style="color: rgb(131, 234, 255); font-weight: 800; font-style: normal; font-size: 16px;">$1,299 MXN</p>
+        <div class="product-actions mt-4 grid gap-2">
+         <button type="button" class="detail-btn secondary-btn rounded-xl px-3 py-2 text-sm">Ver detalles</button><button type="button" class="add-btn primary-btn rounded-xl px-3 py-2 text-sm">Añadir al carrito</button>
+        </div>
+       </div>
+      </article>
+      <article data-product="sensor" data-template-id="product-sensor-card" class="canva-card product-card glass rounded-[26px]" style="background: rgb(16, 30, 61);">
+       <div class="product-media">
+        <img data-template-id="product-sensor-image" class="canva-image" loading="lazy" src="https://images.pexels.com/photos/35686438/pexels-photo-35686438.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Sensor electrónico compacto sobre una base redonda de madera">
+       </div>
+       <div class="flex flex-1 flex-col p-4">
+        <h3 data-template-id="product-sensor-name" class="canva-text font-bold" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 19px;">Sensor de movimiento</h3>
+        <p data-template-id="product-sensor-desc" class="canva-text muted mt-2 flex-1 text-sm" style="color: rgb(182, 199, 227); font-weight: 400; font-style: normal; font-size: 14px;">Alertas inteligentes cuando más importan.</p>
+        <p data-template-id="product-sensor-price" class="canva-text mt-4 font-extrabold" style="color: rgb(131, 234, 255); font-weight: 800; font-style: normal; font-size: 16px;">$549 MXN</p>
+        <div class="product-actions mt-4 grid gap-2">
+         <button type="button" class="detail-btn secondary-btn rounded-xl px-3 py-2 text-sm">Ver detalles</button><button type="button" class="add-btn primary-btn rounded-xl px-3 py-2 text-sm">Añadir al carrito</button>
+        </div>
+       </div>
+      </article>
+      <article data-product="lock" data-template-id="product-lock-card" class="canva-card product-card glass rounded-[26px]" style="background: rgb(16, 30, 61);">
+       <div class="product-media">
+        <img data-template-id="product-lock-image" class="canva-image" loading="lazy" src="https://images.pexels.com/photos/20901468/pexels-photo-20901468.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Cerradura inteligente instalada en una puerta de madera"><span data-template-id="product-lock-tag" class="canva-tag absolute left-4 top-4 rounded-full px-2.5 py-1 text-xs font-bold" style="background: rgb(85, 32, 77); color: rgb(255, 212, 244); font-weight: 400; font-style: normal; font-size: 16px;">OFERTA</span>
+       </div>
+       <div class="flex flex-1 flex-col p-4">
+        <h3 data-template-id="product-lock-name" class="canva-text font-bold" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 19px;">Cerradura inteligente</h3>
+        <p data-template-id="product-lock-desc" class="canva-text muted mt-2 flex-1 text-sm" style="color: rgb(182, 199, 227); font-weight: 400; font-style: normal; font-size: 14px;">Acceso práctico con diseño contemporáneo.</p>
+        <p data-template-id="product-lock-price" class="canva-text mt-4 font-extrabold" style="color: rgb(131, 234, 255); font-weight: 800; font-style: normal; font-size: 16px;">$2,899 MXN</p>
+        <div class="product-actions mt-4 grid gap-2">
+         <button type="button" class="detail-btn secondary-btn rounded-xl px-3 py-2 text-sm">Ver detalles</button><button type="button" class="add-btn primary-btn rounded-xl px-3 py-2 text-sm">Añadir al carrito</button>
+        </div>
+       </div>
+      </article>
+      <article data-product="hub" data-template-id="product-hub-card" class="canva-card product-card glass rounded-[26px]" style="background: rgb(16, 30, 61);">
+       <div class="product-media">
+        <img data-template-id="product-hub-image" class="canva-image" loading="lazy" src="https://images.pexels.com/photos/4790268/pexels-photo-4790268.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Altavoz inteligente sobre una superficie de madera">
+       </div>
+       <div class="flex flex-1 flex-col p-4">
+        <h3 data-template-id="product-hub-name" class="canva-text font-bold" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 19px;">Hub de automatización</h3>
+        <p data-template-id="product-hub-desc" class="canva-text muted mt-2 flex-1 text-sm" style="color: rgb(182, 199, 227); font-weight: 400; font-style: normal; font-size: 14px;">Centraliza tus dispositivos conectados.</p>
+        <p data-template-id="product-hub-price" class="canva-text mt-4 font-extrabold" style="color: rgb(131, 234, 255); font-weight: 800; font-style: normal; font-size: 16px;">$1,599 MXN</p>
+        <div class="product-actions mt-4 grid gap-2">
+         <button type="button" class="detail-btn secondary-btn rounded-xl px-3 py-2 text-sm">Ver detalles</button><button type="button" class="add-btn primary-btn rounded-xl px-3 py-2 text-sm">Añadir al carrito</button>
+        </div>
+       </div>
+      </article>
+      <article data-product="router" data-template-id="product-router-card" class="canva-card product-card glass rounded-[26px]" style="background: rgb(16, 30, 61);">
+       <div class="product-media">
+        <img data-template-id="product-router-image" class="canva-image" loading="lazy" src="https://images.pexels.com/photos/29711663/pexels-photo-29711663.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Router inalámbrico blanco con antenas y luz azul y rosa">
+       </div>
+       <div class="flex flex-1 flex-col p-4">
+        <h3 data-template-id="product-router-name" class="canva-text font-bold" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 19px;">Router Wi-Fi de alto rendimiento</h3>
+        <p data-template-id="product-router-desc" class="canva-text muted mt-2 flex-1 text-sm" style="color: rgb(182, 199, 227); font-weight: 400; font-style: normal; font-size: 14px;">Cobertura estable para más dispositivos.</p>
+        <p data-template-id="product-router-price" class="canva-text mt-4 font-extrabold" style="color: rgb(131, 234, 255); font-weight: 800; font-style: normal; font-size: 16px;">$2,199 MXN</p>
+        <div class="product-actions mt-4 grid gap-2">
+         <button type="button" class="detail-btn secondary-btn rounded-xl px-3 py-2 text-sm">Ver detalles</button><button type="button" class="add-btn primary-btn rounded-xl px-3 py-2 text-sm">Añadir al carrito</button>
+        </div>
+       </div>
+      </article>
+      <article data-product="kit" data-template-id="product-kit-card" class="canva-card product-card glass rounded-[26px]" style="background: rgb(16, 30, 61);">
+       <div class="product-media">
+        <img data-template-id="product-kit-image" class="canva-image" loading="lazy" src="https://images.pexels.com/photos/18136105/pexels-photo-18136105.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Dispositivos inteligentes con bombillas, sensores y teléfono"><span data-template-id="product-kit-tag" class="canva-tag absolute left-4 top-4 rounded-full px-2.5 py-1 text-xs font-bold" style="background: rgb(23, 61, 86); color: rgb(168, 235, 255); font-weight: 400; font-style: normal; font-size: 16px;">DESTACADO</span>
+       </div>
+       <div class="flex flex-1 flex-col p-4">
+        <h3 data-template-id="product-kit-name" class="canva-text font-bold" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 19px;">Kit de automatización</h3>
+        <p data-template-id="product-kit-desc" class="canva-text muted mt-2 flex-1 text-sm" style="color: rgb(182, 199, 227); font-weight: 400; font-style: normal; font-size: 14px;">Comienza a conectar tu hogar fácilmente.</p>
+        <p data-template-id="product-kit-price" class="canva-text mt-4 font-extrabold" style="color: rgb(131, 234, 255); font-weight: 800; font-style: normal; font-size: 16px;">$3,499 MXN</p>
+        <div class="product-actions mt-4 grid gap-2">
+         <button type="button" class="detail-btn secondary-btn rounded-xl px-3 py-2 text-sm">Ver detalles</button><button type="button" class="add-btn primary-btn rounded-xl px-3 py-2 text-sm">Añadir al carrito</button>
+        </div>
+       </div>
+      </article>
+      <article data-product="business" data-template-id="product-business-card" class="canva-card product-card glass rounded-[26px]" style="background: rgb(16, 30, 61);">
+       <div class="product-media">
+        <img data-template-id="product-business-image" class="canva-image" loading="lazy" src="https://images.pexels.com/photos/3205735/pexels-photo-3205735.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Cámara de videovigilancia instalada en un edificio de concreto"><span data-template-id="product-business-tag" class="canva-tag absolute left-4 top-4 rounded-full px-2.5 py-1 text-xs font-bold" style="background: rgb(23, 61, 86); color: rgb(168, 235, 255); font-weight: 400; font-style: normal; font-size: 16px;">B2B</span>
+       </div>
+       <div class="flex flex-1 flex-col p-4">
+        <h3 data-template-id="product-business-name" class="canva-text font-bold" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 19px;">Kit de videovigilancia empresarial</h3>
+        <p data-template-id="product-business-desc" class="canva-text muted mt-2 flex-1 text-sm" style="color: rgb(182, 199, 227); font-weight: 400; font-style: normal; font-size: 14px;">Una base sólida para proteger tu negocio.</p>
+        <p data-template-id="product-business-price" class="canva-text mt-4 font-extrabold" style="color: rgb(131, 234, 255); font-weight: 800; font-style: normal; font-size: 16px;">$12,999 MXN</p>
+        <div class="product-actions mt-4 grid gap-2">
+         <button type="button" class="detail-btn secondary-btn rounded-xl px-3 py-2 text-sm">Ver detalles</button><button type="button" class="add-btn primary-btn rounded-xl px-3 py-2 text-sm">Añadir al carrito</button>
+        </div>
+       </div>
+      </article>
+     </div>
+     <p id="empty-results" class="glass mt-6 hidden rounded-2xl p-8 text-center" role="status">No encontramos productos con esos filtros. Ajusta la búsqueda.</p>
+    </section>
+    <section class="page-wrap section-gap">
+     <div class="glass grid items-center gap-6 rounded-[30px] border-[#4c6794] bg-gradient-to-r from-[#11264c] to-[#33204f] p-7 md:grid-cols-[1fr_auto] md:p-10">
+      <div>
+       <p data-template-id="featured-kicker" class="canva-text eyebrow" style="color: rgb(112, 233, 255); font-weight: 400; font-style: normal; font-size: 16px;">SELECCIÓN DESTACADA</p>
+       <h2 data-template-id="featured-title" class="canva-text section-title mt-3" style="color: rgb(255, 255, 255); font-weight: 800; font-style: normal; font-size: 24px;">Una mejor forma de empezar.</h2>
+       <p data-template-id="featured-description" class="canva-text muted mt-3" style="color: rgb(182, 199, 227); font-weight: 400; font-style: normal; font-size: 16px;">Descubre nuestras opciones favoritas para conectar tu espacio.</p>
+      </div><button id="show-featured" data-template-id="featured-button" type="button" class="canva-button primary-btn rounded-2xl px-6 py-4" style="background: rgb(112, 233, 255); color: rgb(7, 17, 43); font-weight: 800; font-style: normal; font-size: 16px;">Ver destacados →</button>
+     </div>
+    </section>
+    <section id="negocios" class="page-wrap section-gap">
+     <div class="grid gap-8 md:grid-cols-2 md:items-center">
+      <div>
+       <p data-template-id="b2b-kicker" class="canva-text eyebrow" style="color: rgb(112, 233, 255); font-weight: 400; font-style: normal; font-size: 16px;">REYPLACE PARA NEGOCIOS</p>
+       <h2 data-template-id="b2b-title" class="canva-text section-title mt-3" style="color: rgb(255, 255, 255); font-weight: 800; font-style: normal; font-size: 24px;">Tecnología que trabaja contigo.</h2>
+       <p data-template-id="b2b-description" class="canva-text muted mt-5 leading-relaxed" style="color: rgb(182, 199, 227); font-weight: 400; font-style: normal; font-size: 16px;">Desde redes confiables y videovigilancia hasta automatización: explora soluciones para tus operaciones y solicita orientación personalizada.</p><a data-template-id="b2b-button" href="mailto:contacto@reyplace.mx?subject=Consulta%20de%20soluciones%20para%20negocios" class="canva-button secondary-btn mt-7 inline-block rounded-2xl px-6 py-3 no-underline" style="background: rgb(20, 36, 72); color: rgb(237, 246, 255); font-weight: 700; font-style: normal; font-size: 16px;">Consultar por correo →</a>
+      </div>
+      <div class="grid gap-3 sm:grid-cols-2">
+       <div data-template-id="benefit-install" class="canva-card glass rounded-[24px] p-6" style="background: rgb(16, 30, 61);">
+        <i data-lucide="settings-2" class="h-7 w-7 text-[#70e9ff]"></i>
+        <h3 data-template-id="benefit-install-title" class="canva-text mt-4 font-bold" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 19px;">Instalación</h3>
+        <p data-template-id="benefit-install-copy" class="canva-text muted mt-2 text-sm" style="color: rgb(182, 199, 227); font-weight: 400; font-style: normal; font-size: 14px;">Consulta opciones para poner en marcha tu solución.</p>
+       </div>
+       <div data-template-id="benefit-support" class="canva-card glass rounded-[24px] p-6" style="background: rgb(16, 30, 61);">
+        <i data-lucide="headset" class="h-7 w-7 text-[#70e9ff]"></i>
+        <h3 data-template-id="benefit-support-title" class="canva-text mt-4 font-bold" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 19px;">Soporte</h3>
+        <p data-template-id="benefit-support-copy" class="canva-text muted mt-2 text-sm" style="color: rgb(182, 199, 227); font-weight: 400; font-style: normal; font-size: 14px;">Acompañamiento para elegir y usar tu tecnología.</p>
+       </div>
+       <div data-template-id="benefit-advice" class="canva-card glass rounded-[24px] p-6 sm:col-span-2" style="background: rgb(16, 30, 61);">
+        <i data-lucide="scan-eye" class="h-7 w-7 text-[#70e9ff]"></i>
+        <h3 data-template-id="benefit-advice-title" class="canva-text mt-4 font-bold" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 19px;">Asesoría personalizada</h3>
+        <p data-template-id="benefit-advice-copy" class="canva-text muted mt-2 text-sm" style="color: rgb(182, 199, 227); font-weight: 400; font-style: normal; font-size: 14px;">Encuentra una combinación que responda a las necesidades de tu espacio.</p>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section id="agendar" class="page-wrap section-gap">
+     <p data-template-id="booking-kicker" class="canva-text eyebrow" style="color: rgb(112, 233, 255); font-weight: 400; font-style: normal; font-size: 16px;">SERVICIOS · REYPLACE</p>
+     <h2 data-template-id="booking-title" class="canva-text section-title mt-3" style="color: rgb(255, 255, 255); font-weight: 800; font-style: normal; font-size: 24px;">Agenda una solicitud de servicio.</h2>
+     <p data-template-id="booking-intro" class="canva-text muted mt-4 max-w-2xl" style="color: rgb(182, 199, 227); font-weight: 400; font-style: normal; font-size: 16px;">Selecciona un servicio y un horario preferido. Te contactaremos para confirmar disponibilidad; este formulario no garantiza una cita automáticamente.</p>
+     <div class="glass mt-7 grid gap-8 rounded-[30px] p-6 md:grid-cols-[1.3fr_.7fr] md:p-9">
+      <form id="booking-form" class="grid gap-4 sm:grid-cols-2">
+       <div class="sm:col-span-2">
+        <label data-template-id="service-label" for="service" class="canva-text mb-2 block font-semibold" style="color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;">Servicio</label><select id="service" class="field" required=""><option value="">Selecciona un servicio</option><option>Instalación de dispositivos</option><option>Configuración de red</option><option>Asesoría de seguridad</option><option>Diagnóstico de automatización</option></select>
+       </div>
+       <div>
+        <label data-template-id="date-label" for="booking-date" class="canva-text mb-2 block font-semibold" style="color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;">Fecha preferida</label><input id="booking-date" class="field" type="date" required="">
+       </div>
+       <div>
+        <label data-template-id="time-label" for="booking-time" class="canva-text mb-2 block font-semibold" style="color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;">Horario preferido</label><select id="booking-time" class="field" required=""><option value="">Selecciona un horario</option><option>09:00</option><option>11:00</option><option>13:00</option><option>16:00</option><option>18:00</option></select>
+       </div>
+       <div>
+        <label data-template-id="name-label" for="customer-name" class="canva-text mb-2 block font-semibold" style="color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;">Nombre</label><input id="customer-name" class="field" autocomplete="name" maxlength="100" required="">
+       </div>
+       <div>
+        <label data-template-id="email-label" for="customer-email" class="canva-text mb-2 block font-semibold" style="color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;">Correo electrónico</label><input id="customer-email" class="field" type="email" autocomplete="email" maxlength="150" required="">
+       </div>
+       <div class="sm:col-span-2">
+        <label data-template-id="phone-label" for="customer-phone" class="canva-text mb-2 block font-semibold" style="color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;">Teléfono de contacto</label><input id="customer-phone" class="field" type="tel" autocomplete="tel" inputmode="tel" pattern="[0-9+() .-]{10,20}" maxlength="20" required="">
+       </div><button data-template-id="review-booking" type="submit" class="canva-button primary-btn rounded-2xl px-5 py-3 sm:col-span-2" style="background: rgb(112, 233, 255); color: rgb(7, 17, 43); font-weight: 800; font-style: normal; font-size: 16px;">Revisar solicitud →</button>
+      </form>
+      <aside class="rounded-[24px] border border-[#40547c] bg-[#0b1936] p-5" aria-label="Resumen de la solicitud">
+       <h3 data-template-id="booking-summary-title" class="canva-text font-bold" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 19px;">Antes de confirmar</h3>
+       <p data-template-id="booking-summary-hint" class="canva-text muted mt-3 text-sm" style="color: rgb(182, 199, 227); font-weight: 400; font-style: normal; font-size: 14px;">Completa el formulario para ver tu resumen.</p>
+       <div id="booking-review" hidden="">
+        <p id="booking-summary" class="mt-4 whitespace-pre-line text-sm leading-relaxed"></p>
+        <p data-template-id="booking-review-note" class="canva-text muted mt-3 text-sm" style="color: rgb(182, 199, 227); font-weight: 400; font-style: normal; font-size: 14px;">Solicitud sujeta a disponibilidad. No se cobrará aquí.</p><button id="confirm-booking" data-template-id="confirm-booking-label" type="button" class="canva-button primary-btn mt-5 w-full rounded-xl p-3" style="background: rgb(112, 233, 255); color: rgb(7, 17, 43); font-weight: 800; font-style: normal; font-size: 16px;">Confirmar solicitud</button>
+       </div>
+       <p id="booking-feedback" class="mt-4 text-sm" role="status" aria-live="polite"></p>
+      </aside>
+     </div>
+    </section>
+    <section id="faq" class="page-wrap section-gap">
+     <p data-template-id="faq-kicker" class="canva-text eyebrow" style="color: rgb(112, 233, 255); font-weight: 400; font-style: normal; font-size: 16px;">PREGUNTAS FRECUENTES</p>
+     <h2 data-template-id="faq-title" class="canva-text section-title mt-3" style="color: rgb(255, 255, 255); font-weight: 800; font-style: normal; font-size: 24px;">Todo más claro.</h2>
+     <div class="mt-7 space-y-3">
+      <details class="glass rounded-2xl p-5">
+       <summary data-template-id="faq-q1" class="canva-text font-bold" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">¿Los precios incluyen instalación?</summary>
+       <p data-template-id="faq-a1" class="canva-text muted pt-3" style="color: rgb(182, 199, 227); font-weight: 400; font-style: normal; font-size: 16px;">Los precios de ejemplo corresponden a productos. Solicita información sobre disponibilidad y costo de instalación.</p>
+      </details>
+      <details class="glass rounded-2xl p-5">
+       <summary data-template-id="faq-q2" class="canva-text font-bold" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">¿Puedo solicitar una solución para mi negocio?</summary>
+       <p data-template-id="faq-a2" class="canva-text muted pt-3" style="color: rgb(182, 199, 227); font-weight: 400; font-style: normal; font-size: 16px;">Sí. Escríbenos o solicita una asesoría para describir tu proyecto.</p>
+      </details>
+      <details class="glass rounded-2xl p-5">
+       <summary data-template-id="faq-q3" class="canva-text font-bold" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">¿Se realiza el pago en esta página?</summary>
+       <p data-template-id="faq-a3" class="canva-text muted pt-3" style="color: rgb(182, 199, 227); font-weight: 400; font-style: normal; font-size: 16px;">No. ReyPass es una demostración: no procesa cobros ni envía pedidos. El envío mostrado es ilustrativo.</p>
+      </details>
+     </div>
+    </section>
+    <section id="contacto" class="page-wrap section-gap pb-20">
+     <div class="glass rounded-[30px] border-[#47719c] p-7 md:p-10">
+      <p data-template-id="contact-kicker" class="canva-text eyebrow" style="color: rgb(112, 233, 255); font-weight: 400; font-style: normal; font-size: 16px;">HABLEMOS DE TU PROYECTO</p>
+      <h2 data-template-id="contact-title" class="canva-text section-title mt-3" style="color: rgb(255, 255, 255); font-weight: 800; font-style: normal; font-size: 24px;">La siguiente idea comienza aquí.</h2>
+      <p data-template-id="contact-copy" class="canva-text muted mt-4 max-w-[650px]" style="color: rgb(182, 199, 227); font-weight: 400; font-style: normal; font-size: 16px;">Resolvamos tus dudas sobre productos, instalación y soluciones para negocios. Elige cómo prefieres comunicarte con REYPLACE.MX.</p>
+      <div class="mt-7 flex flex-wrap gap-3">
+       <a data-template-id="contact-button" href="mailto:contacto@reyplace.mx?subject=Consulta%20REYPLACE.MX" class="canva-button primary-btn rounded-2xl px-6 py-4 no-underline" style="background: rgb(112, 233, 255); color: rgb(7, 17, 43); font-weight: 800; font-style: normal; font-size: 16px;">contacto@reyplace.mx</a><a data-template-id="contact-whatsapp" href="https://wa.me/526682523847" target="_blank" rel="noopener noreferrer" class="canva-button secondary-btn rounded-2xl px-6 py-4 no-underline" style="background: rgb(20, 36, 72); color: rgb(237, 246, 255); font-weight: 700; font-style: normal; font-size: 16px;">WhatsApp · +52 668 252 3847</a><a data-template-id="contact-facebook" href="https://www.facebook.com/ReyplaceMx" target="_blank" rel="noopener noreferrer" class="canva-button secondary-btn rounded-2xl px-6 py-4 no-underline" style="background: rgb(20, 36, 72); color: rgb(237, 246, 255); font-weight: 700; font-style: normal; font-size: 16px;">Facebook · ReyplaceMx</a>
+      </div>
+     </div>
+    </section>
+   </main>
+   <footer class="border-t border-[#34486e] bg-[#061028] py-12">
+    <div class="page-wrap grid gap-8 md:grid-cols-3">
+     <div>
+      <p data-template-id="footer-brand" class="canva-text font-extrabold tracking-widest" style="color: rgb(255, 255, 255); font-weight: 800; font-style: normal; font-size: 16px;">♛ REYPLACE.MX</p>
+      <p data-template-id="footer-description" class="canva-text muted mt-3 text-sm" style="color: rgb(182, 199, 227); font-weight: 400; font-style: normal; font-size: 14px;">Conectamos. Innovamos. Transformamos.</p>
+     </div>
+     <div>
+      <h2 data-template-id="footer-links-title" class="canva-text font-bold" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 24px;">Explorar</h2>
+      <nav aria-label="Enlaces del pie de página" class="mt-3 flex flex-col gap-2 text-sm text-[#bed0ef]">
+       <a href="#catalogo">Productos</a><a href="#negocios">Negocios</a><a href="#agendar">Agendar</a><a href="#faq">Preguntas frecuentes</a><a href="#contacto">Contacto</a>
+      </nav>
+     </div>
+     <div>
+      <h2 data-template-id="footer-contact-title" class="canva-text font-bold" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 24px;">Contacto y privacidad</h2>
+      <p data-template-id="footer-email" class="canva-text muted mt-3 text-sm" style="color: rgb(182, 199, 227); font-weight: 400; font-style: normal; font-size: 14px;">contacto@reyplace.mx</p>
+      <p data-template-id="footer-phone" class="canva-text muted mt-2 text-sm" style="color: rgb(182, 199, 227); font-weight: 400; font-style: normal; font-size: 14px;">WhatsApp: +52 668 252 3847 · Facebook: ReyplaceMx</p>
+     </div>
+    </div>
+    <div class="page-wrap mt-10 border-t border-[#304266] pt-5">
+     <p data-template-id="privacy-copy" class="canva-text muted text-xs" style="color: rgb(182, 199, 227); font-weight: 400; font-style: normal; font-size: 12px;">ReyPass no realiza cobros ni envía pedidos. Las tarifas y plazos de envío son ilustrativos; solicita una cotización y consulta el aviso de privacidad oficial antes de compartir datos.</p>
+     <p data-template-id="footer-copyright" class="canva-text muted mt-3 text-xs" style="color: rgb(182, 199, 227); font-weight: 400; font-style: normal; font-size: 12px;">© REYPLACE.MX · Sitio de demostración.</p>
+    </div>
+   </footer>
+  </div>
+  <div id="detail-overlay" class="overlay" hidden="">
+   <section role="dialog" aria-modal="true" aria-labelledby="detail-title" class="glass max-h-[90%] w-full max-w-lg overflow-auto rounded-[30px] p-6">
+    <div class="flex items-start justify-between gap-4">
+     <div>
+      <p data-template-id="detail-kicker" class="canva-text eyebrow" style="color: rgb(112, 233, 255); font-weight: 400; font-style: normal; font-size: 16px;">DETALLE DEL PRODUCTO</p>
+      <h2 id="detail-title" class="mt-2 text-2xl font-bold"></h2>
+     </div><button id="close-detail" type="button" class="secondary-btn rounded-xl px-3 py-2" aria-label="Cerrar detalle">✕</button>
+    </div>
+    <div id="detail-image-stage" class="mt-5 overflow-hidden rounded-[22px] bg-[#16274c]"><img data-template-id="detail-bulb-image" class="canva-image hidden h-56 w-full object-cover" loading="lazy" src="https://images.pexels.com/photos/28940484/pexels-photo-28940484.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Bombilla LED con iluminación de neón azul y rosa"> <img data-template-id="detail-camera-image" class="canva-image hidden h-56 w-full object-cover" loading="lazy" src="https://images.pexels.com/photos/33104382/pexels-photo-33104382.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Cámara blanca de seguridad doméstica sobre una superficie de madera"> <img data-template-id="detail-sensor-image" class="canva-image hidden h-56 w-full object-cover" loading="lazy" src="https://images.pexels.com/photos/35686438/pexels-photo-35686438.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Sensor electrónico compacto sobre una base redonda de madera"> <img data-template-id="detail-lock-image" class="canva-image hidden h-56 w-full object-cover" loading="lazy" src="https://images.pexels.com/photos/20901468/pexels-photo-20901468.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Cerradura inteligente instalada en una puerta de madera"> <img data-template-id="detail-hub-image" class="canva-image hidden h-56 w-full object-cover" loading="lazy" src="https://images.pexels.com/photos/4790268/pexels-photo-4790268.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Altavoz inteligente sobre una superficie de madera"> <img data-template-id="detail-router-image" class="canva-image hidden h-56 w-full object-cover" loading="lazy" src="https://images.pexels.com/photos/29711663/pexels-photo-29711663.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Router inalámbrico blanco con antenas y luz azul y rosa"> <img data-template-id="detail-kit-image" class="canva-image hidden h-56 w-full object-cover" loading="lazy" src="https://images.pexels.com/photos/18136105/pexels-photo-18136105.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Dispositivos inteligentes con bombillas, sensores y teléfono"> <img data-template-id="detail-business-image" class="canva-image hidden h-56 w-full object-cover" loading="lazy" src="https://images.pexels.com/photos/3205735/pexels-photo-3205735.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Cámara de videovigilancia instalada en un edificio de concreto">
+    </div>
+    <p id="detail-category" class="muted mt-4"></p>
+    <p id="detail-description" class="mt-3 leading-relaxed"></p>
+    <p id="detail-price" class="mt-5 text-2xl font-extrabold text-[#83eaff]"></p><button id="detail-add" data-template-id="detail-add-label" type="button" class="canva-button primary-btn mt-6 w-full rounded-xl p-3" style="background: rgb(112, 233, 255); color: rgb(7, 17, 43); font-weight: 800; font-style: normal; font-size: 16px;">Añadir al carrito</button>
+   </section>
+  </div>
+  <div id="drawer-backdrop" class="drawer-backdrop" hidden=""></div>
+  <aside id="cart-drawer" class="drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title" hidden="">
+   <div class="flex items-center justify-between border-b border-[#34486e] p-5">
+    <h2 id="cart-title" data-template-id="cart-title-label" class="canva-text font-bold" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 24px;">Tu carrito</h2><button id="close-cart" type="button" class="secondary-btn rounded-xl px-3 py-2" aria-label="Cerrar carrito">✕</button>
+   </div>
+   <div class="drawer-scroll p-5">
+    <div id="cart-view">
+     <p id="cart-empty" data-template-id="cart-empty-label" class="canva-text muted py-12 text-center" style="color: rgb(182, 199, 227); font-weight: 400; font-style: normal; font-size: 16px;">Tu carrito está vacío. Explora el catálogo para empezar.</p>
+     <div id="cart-items" class="space-y-3"></div>
+    </div>
+    <div id="checkout-view" hidden="">
+     <h3 data-template-id="checkout-title" class="canva-text font-bold" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 19px;">ReyPass · demostración</h3>
+     <p data-template-id="checkout-disclaimer" class="canva-text muted mt-3 text-sm leading-relaxed" style="color: rgb(182, 199, 227); font-weight: 400; font-style: normal; font-size: 16px;">No hay pasarela de pago conectada. ReyPass no solicita tarjetas, no realiza cobros y no envía pedidos. Revisa los importes ilustrativos antes de terminar la simulación.</p>
+     <div class="glass mt-5 rounded-2xl p-4"><label data-template-id="shipping-method-label" for="shipping-method" class="canva-text mb-2 block font-semibold" style="color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;">Método de envío ilustrativo</label> <select id="shipping-method" class="field"><option value="local">Local</option><option value="national">Nacional</option><option value="other">Otras zonas · cotización pendiente</option></select>
+      <p id="shipping-estimate" class="muted mt-3 text-sm" aria-live="polite"></p>
+      <details class="mt-4 border-t border-[#40547c] pt-3">
+       <summary data-template-id="shipping-config-title" class="canva-text font-semibold" style="color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;">Configurar tarifas y plazos de ejemplo</summary>
+       <div class="mt-4 grid grid-cols-2 gap-3">
+        <div>
+         <label for="rate-local" class="block text-xs">Tarifa local (MXN)</label><input id="rate-local" type="number" min="0" max="100000" step="1" value="99" class="field mt-1">
+        </div>
+        <div>
+         <label for="days-local" class="block text-xs">Plazo local</label><input id="days-local" type="text" maxlength="35" value="1–3 días hábiles" class="field mt-1">
+        </div>
+        <div>
+         <label for="rate-national" class="block text-xs">Tarifa nacional (MXN)</label><input id="rate-national" type="number" min="0" max="100000" step="1" value="249" class="field mt-1">
+        </div>
+        <div>
+         <label for="days-national" class="block text-xs">Plazo nacional</label><input id="days-national" type="text" maxlength="35" value="3–7 días hábiles" class="field mt-1">
+        </div>
+        <div class="col-span-2">
+         <label for="days-other" class="block text-xs">Plazo otras zonas</label><input id="days-other" type="text" maxlength="35" value="Por confirmar" class="field mt-1">
+        </div>
+       </div>
+       <p data-template-id="shipping-config-note" class="canva-text muted mt-3 text-xs" style="color: rgb(182, 199, 227); font-weight: 400; font-style: normal; font-size: 12px;">Estos cambios solo afectan esta simulación abierta. Confirma tarifas reales directamente con REYPLACE.MX.</p>
+      </details>
+     </div>
+     <div class="glass mt-4 rounded-2xl p-4">
+      <label data-template-id="reypass-config-label" for="reypass-reference" class="canva-text mb-2 block font-semibold" style="color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;">Referencia visible de ReyPass (demo)</label><input id="reypass-reference" class="field" maxlength="40" value="REYPASS-DEMO" autocomplete="off">
+      <p data-template-id="reypass-config-note" class="canva-text muted mt-2 text-xs" style="color: rgb(182, 199, 227); font-weight: 400; font-style: normal; font-size: 12px;">Referencia editable de demostración; no es una clave, credencial ni conexión de pago.</p>
+     </div>
+     <div class="glass mt-4 rounded-2xl p-4 text-sm">
+      <h4 data-template-id="order-summary-title" class="canva-text font-bold" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Resumen antes de confirmar</h4>
+      <p id="order-items-summary" class="mt-3 whitespace-pre-line"></p>
+      <div class="mt-3 flex justify-between">
+       <span>Subtotal</span><strong id="review-subtotal"></strong>
+      </div>
+      <div class="mt-2 flex justify-between">
+       <span>Envío estimado</span><strong id="review-shipping"></strong>
+      </div>
+      <div class="mt-2 flex justify-between border-t border-[#40547c] pt-2">
+       <span>Total estimado</span><strong id="review-total"></strong>
+      </div>
+      <p id="review-reference" class="muted mt-3 break-all"></p>
+     </div>
+     <p id="checkout-error" class="mt-3 text-sm text-[#ffacd9]" role="status"></p><button id="confirm-demo" data-template-id="confirm-demo-label" type="button" class="canva-button primary-btn mt-5 w-full rounded-xl p-3" style="background: rgb(112, 233, 255); color: rgb(7, 17, 43); font-weight: 800; font-style: normal; font-size: 16px;">Terminar simulación ReyPass</button> <button id="back-to-cart" data-template-id="back-to-cart-label" type="button" class="canva-button secondary-btn mt-3 w-full rounded-xl p-3" style="background: rgb(20, 36, 72); color: rgb(237, 246, 255); font-weight: 700; font-style: normal; font-size: 16px;">Volver al carrito</button>
+    </div>
+    <div id="checkout-success" hidden="" class="py-12 text-center" role="status">
+     <span class="text-5xl text-[#70e9ff]" aria-hidden="true">✦</span>
+     <h3 data-template-id="success-title" class="canva-text mt-4 font-bold" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 19px;">Simulación ReyPass completada</h3>
+     <p data-template-id="success-copy" class="canva-text muted mt-3" style="color: rgb(182, 199, 227); font-weight: 400; font-style: normal; font-size: 16px;">No se realizó ningún cargo ni se envió un pedido. Contacta a REYPLACE.MX para consultar disponibilidad y tarifas reales.</p><button id="success-close" data-template-id="success-close-label" type="button" class="canva-button secondary-btn mt-6 rounded-xl px-6 py-3" style="background: rgb(20, 36, 72); color: rgb(237, 246, 255); font-weight: 700; font-style: normal; font-size: 16px;">Seguir explorando</button>
+    </div>
+   </div>
+   <div id="cart-footer" class="border-t border-[#34486e] p-5">
+    <div class="flex justify-between">
+     <span data-template-id="subtotal-label" class="canva-text" style="color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 16px;">Subtotal</span><strong id="subtotal">$0 MXN</strong>
+    </div>
+    <p data-template-id="shipping-note" class="canva-text muted mt-2 text-xs" style="color: rgb(182, 199, 227); font-weight: 400; font-style: normal; font-size: 12px;">Elige un método de envío en el siguiente paso. Sin pagos reales.</p><button id="start-checkout" data-template-id="checkout-button" type="button" class="canva-button primary-btn mt-4 w-full rounded-xl p-3" disabled="" style="background: rgb(112, 233, 255); color: rgb(7, 17, 43); font-weight: 800; font-style: normal; font-size: 16px;">Revisar envío y ReyPass →</button>
+   </div>
+  </aside>
+  <div id="notice" class="fixed bottom-5 left-1/2 z-[80] w-[min(92%,420px)] -translate-x-1/2 rounded-xl border border-[#77ddff] bg-[#173659] p-4 text-center text-white shadow-xl" role="status" aria-live="polite" hidden=""></div>
+  <script>
+const products={
+  bulb:{name:"Foco inteligente RGB",category:"Smart Home",price:399,description:"Personaliza la iluminación de tu hogar con distintos colores y rutinas desde tu celular."},
+  camera:{name:"Cámara Wi-Fi 360°",category:"Seguridad",price:1299,description:"Explora el monitoreo panorámico de espacios interiores desde una solución conectada."},
+  sensor:{name:"Sensor de movimiento",category:"Seguridad",price:549,description:"Detecta actividad y suma una capa adicional de atención a tus espacios."},
+  lock:{name:"Cerradura inteligente",category:"Smart Home",price:2899,description:"Una forma moderna y práctica de gestionar el acceso a tu espacio."},
+  hub:{name:"Hub de automatización",category:"Automatización",price:1599,description:"Organiza dispositivos compatibles y crea un entorno más conectado."},
+  router:{name:"Router Wi-Fi de alto rendimiento",category:"Redes",price:2199,description:"Conecta más dispositivos y mejora la cobertura de tu red."},
+  kit:{name:"Kit de automatización",category:"Automatización",price:3499,description:"Una selección de dispositivos para comenzar tu proyecto inteligente."},
+  business:{name:"Kit de videovigilancia empresarial",category:"Negocios",price:12999,description:"Solución de referencia para explorar la supervisión de instalaciones comerciales."}
+};
+const $=selector=>document.querySelector(selector);
+const money=value=>new Intl.NumberFormat("es-MX",{style:"currency",currency:"MXN",maximumFractionDigits:0}).format(value);
+const cart=new Map();
+let selectedProduct=null,previousFocus=null,noticeTimer,bookingDraft=null,sdkReady=false;
+function notice(message){const element=$("#notice");element.textContent=message;element.hidden=false;clearTimeout(noticeTimer);noticeTimer=setTimeout(()=>element.hidden=true,3500)}
+function filterProducts(){
+  const query=$("#search-input").value.trim().toLocaleLowerCase("es-MX"),category=$("#category-filter").value,maximum=Number($("#price-filter").value),sort=$("#sort-filter").value;
+  $("#price-value").textContent=money(maximum);
+  document.querySelectorAll("[data-category]").forEach(button=>button.setAttribute("aria-pressed",String(button.dataset.category===category)));
+  const cards=[...document.querySelectorAll("[data-product]")];
+  cards.sort((a,b)=>{const x=products[a.dataset.product],y=products[b.dataset.product];return sort==="low"?x.price-y.price:sort==="high"?y.price-x.price:sort==="name"?x.name.localeCompare(y.name,"es"):0});
+  let visible=0;
+  cards.forEach(card=>{const product=products[card.dataset.product];const show=(category==="all"||product.category===category)&&product.price<=maximum&&`${product.name} ${product.category} ${product.description}`.toLocaleLowerCase("es-MX").includes(query);card.hidden=!show;if(show)visible++;$("#product-grid").append(card)});
+  $("#results-count").textContent=`${visible} ${visible===1?"producto":"productos"}`;
+  $("#empty-results").classList.toggle("hidden",visible!==0);
+}
+function subtotal(){return [...cart].reduce((sum,[id,quantity])=>sum+products[id].price*quantity,0)}
+function renderCart(){
+  const area=$("#cart-items");let count=0;
+  for(const [id,quantity] of cart){
+    const product=products[id];count+=quantity;let row=area.querySelector(`[data-cart-id="${id}"]`);
+    if(!row){
+      row=document.createElement("div");row.dataset.cartId=id;row.className="glass rounded-2xl p-4";
+      const top=document.createElement("div");top.className="flex items-start justify-between gap-3";
+      const title=document.createElement("strong");title.textContent=product.name;
+      const price=document.createElement("span");price.className="row-price shrink-0 text-[#83eaff]";
+      top.append(title,price);
+      const controls=document.createElement("div");controls.className="mt-3 flex items-center gap-3";
+      const minus=document.createElement("button");minus.type="button";minus.className="secondary-btn rounded-lg px-3 py-1";minus.textContent="−";minus.setAttribute("aria-label",`Reducir cantidad de ${product.name}`);minus.onclick=()=>{const current=cart.get(id);current<=1?cart.delete(id):cart.set(id,current-1);renderCart()};
+      const amount=document.createElement("span");amount.className="row-quantity";amount.setAttribute("aria-live","polite");
+      const plus=document.createElement("button");plus.type="button";plus.className="secondary-btn rounded-lg px-3 py-1";plus.textContent="+";plus.setAttribute("aria-label",`Aumentar cantidad de ${product.name}`);plus.onclick=()=>{cart.set(id,cart.get(id)+1);renderCart()};
+      const remove=document.createElement("button");remove.type="button";remove.className="ml-auto text-sm text-[#ffacd9] underline";remove.textContent="Quitar";remove.setAttribute("aria-label",`Quitar ${product.name}`);remove.onclick=()=>{cart.delete(id);renderCart()};
+      controls.append(minus,amount,plus,remove);row.append(top,controls);area.append(row);
+    }
+    row.querySelector(".row-price").textContent=money(product.price*quantity);
+    row.querySelector(".row-quantity").textContent=String(quantity);
+  }
+  area.querySelectorAll("[data-cart-id]").forEach(row=>{if(!cart.has(row.dataset.cartId))row.remove()});
+  $("#cart-count").textContent=String(count);$("#cart-empty").hidden=count!==0;$("#subtotal").textContent=money(subtotal());$("#start-checkout").disabled=count===0;
+  if(!$("#checkout-view").hidden)renderCheckout();
+}
+function addProduct(id){cart.set(id,(cart.get(id)||0)+1);renderCart();notice(`${products[id].name} añadido al carrito`)}
+function openCart(){previousFocus=document.activeElement;$("#drawer-backdrop").hidden=false;$("#cart-drawer").hidden=false;$("#close-cart").focus()}
+function closeCart(){$("#drawer-backdrop").hidden=true;$("#cart-drawer").hidden=true;previousFocus?.focus()}
+function closeDetail(){$("#detail-overlay").hidden=true;previousFocus?.focus()}
+function showDetail(id){
+  selectedProduct=id;previousFocus=document.activeElement;
+  const product=products[id];
+  $("#detail-title").textContent=product.name;$("#detail-category").textContent=product.category;$("#detail-description").textContent=product.description;$("#detail-price").textContent=money(product.price);
+  document.querySelectorAll("#detail-image-stage img").forEach(image=>image.classList.toggle("hidden",image.dataset.templateId!==`detail-${id}-image`));
+  $("#detail-overlay").hidden=false;$("#close-detail").focus();
+}
+function shipping(){
+  const method=$("#shipping-method").value;
+  if(method==="other")return {label:"Otras zonas",rate:null,days:$("#days-other").value.trim()||"Por confirmar"};
+  const local=method==="local",input=$(local?"#rate-local":"#rate-national"),value=Number(input.value);
+  return {label:local?"Local":"Nacional",rate:input.value.trim()!==""&&Number.isFinite(value)&&value>=0&&value<=100000?value:null,days:$(local?"#days-local":"#days-national").value.trim()||"Por confirmar"};
+}
+function renderCheckout(){
+  const estimate=shipping(),base=subtotal();
+  $("#shipping-estimate").textContent=`${estimate.label} · ${estimate.rate===null?"Tarifa por confirmar":money(estimate.rate)} · ${estimate.days} (estimación)`;
+  $("#order-items-summary").textContent=[...cart].map(([id,quantity])=>`${products[id].name} × ${quantity} — ${money(products[id].price*quantity)}`).join("\n");
+  $("#review-subtotal").textContent=money(base);$("#review-shipping").textContent=estimate.rate===null?"Por confirmar":money(estimate.rate);
+  $("#review-total").textContent=estimate.rate===null?`${money(base)} + envío por confirmar`:money(base+estimate.rate);
+  $("#review-reference").textContent=`Referencia demo: ${$("#reypass-reference").value.trim()||"Sin referencia"}`;
+}
+function bookingFeedback(message,error=false){const element=$("#booking-feedback");element.textContent=message;element.className=`mt-4 text-sm ${error?"text-[#ffacd9]":"text-[#85eddb]"}`}
+function todayMexico(){return new Intl.DateTimeFormat("en-CA",{timeZone:"America/Mazatlan",year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date())}
+async function initializeSdk(){
+  if(!window.dataSdk){bookingFeedback("No se pudo conectar con la Canva Sheet. Intenta de nuevo más tarde.",true);return}
+  try{
+    const result=await window.dataSdk.init({onDataChanged(){/* Las solicitudes privadas no se muestran. */}});
+    sdkReady=result.isOk;
+    if(!sdkReady)bookingFeedback("No se pudo preparar el agendamiento. Reintenta al confirmar.",true);
+  }catch{sdkReady=false;bookingFeedback("No se pudo preparar el agendamiento. Reintenta al confirmar.",true)}
+}
+document.querySelectorAll("[data-category]").forEach(button=>button.addEventListener("click",()=>{$("#category-filter").value=button.dataset.category;$("#search-input").value="";filterProducts();$("#catalogo").scrollIntoView({behavior:"smooth"})}));
+$("#header-search").addEventListener("submit",event=>{event.preventDefault();filterProducts();$("#catalogo").scrollIntoView({behavior:"smooth"})});
+$("#search-input").addEventListener("input",filterProducts);
+["#category-filter","#price-filter","#sort-filter"].forEach(selector=>$(selector).addEventListener("input",filterProducts));
+$("#product-grid").addEventListener("click",event=>{const card=event.target.closest("[data-product]");if(!card)return;if(event.target.closest(".detail-btn"))showDetail(card.dataset.product);else if(event.target.closest(".add-btn"))addProduct(card.dataset.product)});
+$("#show-featured").onclick=()=>{$("#search-input").value="";$("#category-filter").value="all";$("#price-filter").value="15000";$("#sort-filter").value="featured";filterProducts();$("#catalogo").scrollIntoView({behavior:"smooth"});notice("Los destacados llevan una etiqueta en el catálogo")};
+$("#open-cart").onclick=openCart;$("#close-cart").onclick=closeCart;$("#drawer-backdrop").onclick=closeCart;$("#close-detail").onclick=closeDetail;
+$("#detail-overlay").addEventListener("click",event=>{if(event.target===event.currentTarget)closeDetail()});
+$("#detail-add").onclick=()=>{if(selectedProduct){const id=selectedProduct;closeDetail();addProduct(id);openCart()}};
+$("#start-checkout").onclick=()=>{if(!cart.size)return;$("#cart-view").hidden=true;$("#cart-footer").hidden=true;$("#checkout-success").hidden=true;$("#checkout-view").hidden=false;renderCheckout();$("#shipping-method").focus()};
+$("#back-to-cart").onclick=()=>{$("#checkout-view").hidden=true;$("#cart-view").hidden=false;$("#cart-footer").hidden=false;$("#start-checkout").focus()};
+["#shipping-method","#rate-local","#rate-national","#days-local","#days-national","#days-other","#reypass-reference"].forEach(selector=>$(selector).addEventListener("input",renderCheckout));
+$("#confirm-demo").onclick=()=>{if(!cart.size)return;$("#checkout-error").textContent="";cart.clear();renderCart();$("#checkout-view").hidden=true;$("#checkout-success").hidden=false;$("#success-close").focus()};
+$("#success-close").onclick=()=>{$("#checkout-success").hidden=true;$("#cart-view").hidden=false;$("#cart-footer").hidden=false;closeCart()};
+$("#booking-date").min=todayMexico();
+$("#booking-form").addEventListener("submit",event=>{
+  event.preventDefault();if(!event.currentTarget.reportValidity())return;
+  if($("#booking-date").value<todayMexico()){bookingFeedback("Selecciona una fecha futura o de hoy.",true);$("#booking-date").focus();return}
+  bookingDraft={type:"service_request",service:$("#service").value,date:$("#booking-date").value,time:$("#booking-time").value,name:$("#customer-name").value.trim(),email:$("#customer-email").value.trim(),phone:$("#customer-phone").value.trim(),shipping_method:"",total:"",items:"",status:"pendiente_de_confirmacion",created_at:""};
+  $("#booking-summary").textContent=`Servicio: ${bookingDraft.service}\nFecha: ${bookingDraft.date}\nHorario: ${bookingDraft.time}\nCliente: ${bookingDraft.name}\nCorreo: ${bookingDraft.email}\nTeléfono: ${bookingDraft.phone}`;
+  $("#booking-review").hidden=false;bookingFeedback("Revisa los datos y confirma para enviar tu solicitud.");$("#confirm-booking").focus();
+});
+$("#booking-form").addEventListener("input",()=>{if(bookingDraft){bookingDraft=null;$("#booking-review").hidden=true;bookingFeedback("Datos modificados. Revisa nuevamente la solicitud.")}});
+$("#confirm-booking").addEventListener("click",async event=>{
+  const button=event.currentTarget;if(!bookingDraft)return;button.disabled=true;button.setAttribute("aria-busy","true");
+  try{
+    if(!sdkReady){await initializeSdk();if(!sdkReady)return}
+    const result=await window.dataSdk.create({...bookingDraft,created_at:new Date().toISOString()});
+    if(!result.isOk){bookingFeedback("No pudimos confirmar que se guardó la solicitud. Verifica con REYPLACE.MX antes de volver a enviarla.",true);return}
+    bookingDraft=null;$("#booking-review").hidden=true;$("#booking-form").reset();$("#booking-date").min=todayMexico();bookingFeedback("Solicitud guardada. REYPLACE.MX deberá contactarte para confirmar disponibilidad; aún no es una cita confirmada.");
+  }catch{bookingFeedback("No pudimos confirmar que se guardó la solicitud. Verifica con REYPLACE.MX antes de volver a enviarla.",true)}
+  finally{button.disabled=false;button.removeAttribute("aria-busy")}
+});
+document.addEventListener("keydown",event=>{
+  if(event.key==="Escape"){if(!$("#detail-overlay").hidden)closeDetail();else if(!$("#cart-drawer").hidden)closeCart()}
+  if(event.key!=="Tab")return;
+  const modal=!$("#detail-overlay").hidden?$("#detail-overlay"):!$("#cart-drawer").hidden?$("#cart-drawer"):null;
+  if(!modal)return;
+  const focusable=[...modal.querySelectorAll("button:not([disabled]),input:not([disabled]),select:not([disabled]),a[href],summary")].filter(element=>element.getClientRects().length);
+  if(!focusable.length)return;
+  if(event.shiftKey&&document.activeElement===focusable[0]){event.preventDefault();focusable.at(-1).focus()}
+  else if(!event.shiftKey&&document.activeElement===focusable.at(-1)){event.preventDefault();focusable[0].focus()}
+});
+filterProducts();renderCart();initializeSdk();if(window.lucide)lucide.createIcons();
+</script>
+ 
+</body></html>
