@@ -6,7 +6,7 @@
 import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { useAuth } from './context/AuthContext';
 import { PermissionsProvider } from './context/PermissionsProvider';
-import { motion } from 'motion/react';
+import { motion, LayoutGroup } from 'motion/react';
 import {
   ShoppingBag,
   Search,
@@ -29,6 +29,8 @@ import {
   Crown,
   Sparkles,
   Mic,
+  Lock,
+  Unlock,
 } from 'lucide-react';
 import {
   PRODUCTS,
@@ -62,7 +64,7 @@ import { AirRoomPreview } from './components/AirRoomPreview';
 import { EnergyHeatMap } from './components/EnergyHeatMap';
 import { WeatherWidget } from './components/WeatherWidget';
 import { VoiceAssistantModal } from './components/VoiceAssistantModal';
-import { ARVideoReviewsModal, ARVideoReview, INITIAL_AR_REVIEWS } from './components/ARVideoReviewsModal';
+import { ARVideoReviewsModal, ARVideoReview } from './components/ARVideoReviewsModal';
 import { DynamicMetaTags } from './components/DynamicMetaTags';
 import { SinaloaGeoWelcomeBanner } from './components/SinaloaGeoWelcomeBanner';
 import { InstallPwaPrompt } from './components/InstallPwaPrompt';
@@ -154,13 +156,7 @@ export default function App() {
   const [installGuideProduct, setInstallGuideProduct] = useState<Product | null>(null);
   const [arViewerProduct, setArViewerProduct] = useState<Product | null>(null);
   const [isVoiceModalOpen, setIsVoiceModalOpen] = useState<boolean>(false);
-  const [arVideoReviews, setArVideoReviews] = useState<ARVideoReview[]>(INITIAL_AR_REVIEWS);
   const [isARVideoReviewsOpen, setIsARVideoReviewsOpen] = useState<boolean>(false);
-
-  const handleAddARVideoReview = (newRev: ARVideoReview) => {
-    setArVideoReviews((prev) => [newRev, ...prev]);
-    setLoyaltyPoints((prev) => prev + 150);
-  };
 
   // User Behavior Signals for Hybrid Recommendation Engine
   const [viewedIds, setViewedIds] = useState<string[]>(['lock-quantum']);
@@ -520,7 +516,7 @@ export default function App() {
 
       {/* Strict 3-Zone Top Navigation Bar */}
       <header className="sticky top-0 z-40 border-b border-slate-200/80 dark:border-slate-800/80 bg-slate-50/90 dark:bg-[#070d1e]/90 backdrop-blur-xl">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-8">
           {/* Zone 1: Single Wordmark */}
           <a
             href="#inicio"
@@ -528,33 +524,30 @@ export default function App() {
               e.preventDefault();
               setActiveSection('catalogo');
             }}
-            className="font-display text-lg font-extrabold tracking-tight text-slate-900 dark:text-white whitespace-nowrap shrink-0"
+            className="font-display text-2xl font-bold tracking-tighter text-slate-900 dark:text-white whitespace-nowrap shrink-0"
           >
             REYPLACE.MX
           </a>
 
-          {/* Zone 2: 5 Clean Single-Line Text Navigation Links */}
+          {/* Zone 2: 4 Clean Single-Line Text Navigation Links */}
           <nav
             aria-label="Navegación principal"
-            className="hidden md:flex items-center gap-7 text-sm font-medium text-slate-600 dark:text-slate-300"
+            className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600 dark:text-slate-300"
           >
-            {(
-              [
+            {[
                 { id: 'catalogo', label: 'Catálogo' },
                 { id: 'simulador', label: 'Simulador' },
                 { id: 'seguridad', label: 'Seguridad' },
-                { id: 'energia', label: 'Perfil y Energía' },
-                { id: 'soporte', label: 'Asistente IA' },
-              ] as const
-            ).map((item) => (
+                { id: 'energia', label: 'Ecosistema' },
+            ].map((item) => (
               <button
                 key={item.id}
                 type="button"
-                onClick={() => setActiveSection(item.id)}
-                className={`whitespace-nowrap shrink-0 py-1 border-b-2 transition-colors ${
+                onClick={() => setActiveSection(item.id as MainSection)}
+                className={`whitespace-nowrap shrink-0 py-1 transition-colors hover:text-cyan-600 dark:hover:text-[#70e9ff] ${
                   activeSection === item.id
-                    ? 'border-cyan-600 dark:border-[#70e9ff] text-slate-900 dark:text-white font-semibold'
-                    : 'border-transparent hover:text-slate-900 dark:hover:text-white'
+                    ? 'text-slate-900 dark:text-white font-semibold'
+                    : ''
                 }`}
               >
                 {item.label}
@@ -564,30 +557,13 @@ export default function App() {
 
           {/* Zone 3: Primary Cart Action */}
           <div className="flex items-center gap-3 shrink-0">
-            {isAuthenticated ? (
-              <button
-                type="button"
-                onClick={signOut}
-                className="px-4 py-2 rounded-xl bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-white text-xs font-bold transition-colors"
-              >
-                Salir
-              </button>
-            ) : (
-              <button
-                type="button"
-                onClick={signIn}
-                className="px-4 py-2 rounded-xl bg-cyan-600 hover:bg-cyan-500 dark:bg-[#70e9ff] dark:hover:bg-[#56e2ff] text-white dark:text-[#070d1e] text-xs font-bold transition-colors"
-              >
-                Ingresar
-              </button>
-            )}
             <button
               type="button"
               onClick={() => {
                 setIsCartOpen(true);
                 if (checkoutStep === 'success') setCheckoutStep('cart');
               }}
-              className="px-4 py-2 rounded-xl bg-cyan-600 hover:bg-cyan-500 dark:bg-[#70e9ff] dark:hover:bg-[#56e2ff] text-white dark:text-[#070d1e] text-xs font-bold flex items-center gap-2 transition-colors whitespace-nowrap shrink-0"
+              className="px-6 py-2.5 rounded-full bg-slate-900 dark:bg-white text-white dark:text-slate-900 text-sm font-semibold flex items-center gap-2 transition-all hover:scale-105"
             >
               <ShoppingBag className="w-4 h-4" />
               <span>Carrito ({cartCount})</span>
@@ -595,6 +571,36 @@ export default function App() {
           </div>
         </div>
       </header>
+
+      {/* Luxury Hero Section */}
+      <section className="relative overflow-hidden bg-slate-950 dark:bg-[#02050e] text-white">
+          <div className="absolute inset-0 bg-gradient-to-br from-cyan-900/40 via-transparent to-slate-900/40" />
+          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 flex flex-col md:flex-row items-center gap-12">
+            <div className="flex-1 space-y-6">
+                <h1 className="text-5xl md:text-7xl font-display font-extrabold tracking-tighter leading-[0.9] text-white">
+                    CONECTAMOS.<br />
+                    INNOVAMOS.<br />
+                    TRANSFORMAMOS.
+                </h1>
+                <p className="text-lg md:text-xl text-slate-300 max-w-lg leading-relaxed">
+                    Elevando la experiencia de hogar inteligente a un estándar de lujo, seguridad y eficiencia energética.
+                </p>
+                <button 
+                  onClick={() => setActiveSection('catalogo')}
+                  className="px-8 py-4 rounded-full bg-cyan-500 text-white font-bold text-lg transition-all hover:bg-cyan-400 hover:scale-105"
+                >
+                    Explorar Colección
+                </button>
+            </div>
+            <div className="flex-1 w-full md:max-w-md">
+                <img 
+                    src="/assets/aistudio/363506389_1793582639543287_366adfed.jpg"
+                    alt="ReyPlace Logo"
+                    className="w-full h-auto object-contain rounded-3xl neo-surface"
+                />
+            </div>
+          </div>
+      </section>
 
       {/* Secondary Workspace Bar: Interactive Membership Progress Widget + Theme Switch */}
       <div className="border-b border-slate-200/60 dark:border-slate-800/60 bg-slate-100/60 dark:bg-[#091229]/70">
@@ -660,17 +666,63 @@ export default function App() {
           </button>
 
           <div className="flex items-center gap-3 ml-auto">
+            {isAuthenticated ? (
+              <button
+                type="button"
+                onClick={signOut}
+                className="px-3 py-1.5 rounded-full bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-white text-xs font-bold transition-colors"
+              >
+                Salir
+              </button>
+            ) : (
+              <button
+                type="button"
+                onClick={signIn}
+                className="px-3 py-1.5 rounded-full bg-cyan-600 text-white dark:bg-[#70e9ff] dark:text-[#070d1e] text-xs font-bold transition-colors"
+              >
+                Ingresar
+              </button>
+            )}
             <WeatherWidget />
 
-            <button
-              type="button"
-              onClick={() => setIsVoiceModalOpen(true)}
-              className="neo-inset px-3.5 py-1.5 rounded-xl font-semibold text-cyan-700 dark:text-[#70e9ff] flex items-center gap-1.5 hover:scale-105 transition-transform"
-              title="Activar Comandos de Voz"
-            >
-              <Mic className="w-4 h-4 animate-pulse text-cyan-500" />
-              <span>Voz IA</span>
-            </button>
+             <div className="relative group">
+              {/* Tooltip for First Visit */}
+              {typeof window !== 'undefined' && !localStorage.getItem('voice_tooltip_shown_main') && (
+                <motion.div
+                  initial={{ opacity: 0, y: 10, scale: 0.95 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  exit={{ opacity: 0, y: -10 }}
+                  className="absolute -top-16 left-1/2 -translate-x-1/2 w-48 bg-slate-900 p-3 rounded-xl border border-slate-700 shadow-2xl z-50"
+                >
+                  <p className="text-[10px] text-white">
+                    ¡Prueba nuestra <strong className="text-cyan-400">Voz IA</strong>! Navega y busca productos usando comandos de voz.
+                  </p>
+                  <button 
+                    onClick={() => {
+                      localStorage.setItem('voice_tooltip_shown_main', 'true');
+                      const element = document.getElementById('voice-tooltip-wrapper');
+                      if(element) element.style.display = 'none';
+                    }}
+                    className="absolute -bottom-2 right-2 text-[8px] bg-slate-700 px-2 py-0.5 rounded-full"
+                  >
+                    Entendido
+                  </button>
+                </motion.div>
+              )}
+              <button
+                type="button"
+                id="voice-tooltip-wrapper"
+                onClick={() => {
+                  localStorage.setItem('voice_tooltip_shown_main', 'true');
+                  setIsVoiceModalOpen(true);
+                }}
+                className="neo-inset px-3.5 py-1.5 rounded-xl font-semibold text-cyan-700 dark:text-[#70e9ff] flex items-center gap-1.5 hover:scale-105 transition-transform"
+                title="Activar Comandos de Voz"
+              >
+                <Mic className="w-4 h-4 animate-pulse text-cyan-500" />
+                <span>Voz IA</span>
+              </button>
+             </div>
 
             {compareIds.length > 0 && activeSection === 'catalogo' && (
               <a
@@ -712,6 +764,30 @@ export default function App() {
               onAddToCart={addToCart}
             />
 
+            <section className="py-12 bg-slate-100 dark:bg-[#091229] rounded-[32px] my-12">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+                    <h2 className="text-3xl font-display font-bold text-slate-900 dark:text-white">Experiencia Inmersiva</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <video 
+                            src="/assets/aistudio/378770323_1793582605081051_6c8a7df1.mp4"
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            className="w-full rounded-3xl neo-surface shadow-2xl"
+                        />
+                        <video 
+                            src="/assets/aistudio/378770323_1792582766939876_6c8a7df1.mp4"
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            className="w-full rounded-3xl neo-surface shadow-2xl"
+                        />
+                    </div>
+                </div>
+            </section>
+            
             <section className="space-y-5">
               <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-2">
                 <div>
@@ -824,11 +900,13 @@ export default function App() {
                     </p>
                   </div>
                 ) : (
+                  <LayoutGroup>
                   <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
                     {filteredProducts.map((product, index) => {
                       const isCompared = compareIds.includes(product.id);
                       return (
                         <motion.article
+                          layout
                           key={product.id}
                           initial={{ opacity: 0, y: 24, scale: 0.98 }}
                           whileInView={{ opacity: 1, y: 0, scale: 1 }}
@@ -939,6 +1017,7 @@ export default function App() {
                       );
                     })}
                   </div>
+                  </LayoutGroup>
                 )}
               </div>
             </section>
@@ -1819,8 +1898,7 @@ export default function App() {
       {isARVideoReviewsOpen && arViewerProduct && (
         <ARVideoReviewsModal
           product={arViewerProduct}
-          reviews={arVideoReviews}
-          onAddReview={handleAddARVideoReview}
+          userId={user?.uid}
           onClose={() => setIsARVideoReviewsOpen(false)}
           onTriggerToast={triggerToast}
         />
