@@ -7,8 +7,10 @@ export const CloudBridgeChart: React.FC = () => {
   useEffect(() => {
     if (!svgRef.current) return;
 
+    interface LatencyPoint { time: number; latency: number; }
+
     // Data: Simulated latency over time (ms)
-    const data = Array.from({ length: 20 }, (_, i) => ({
+    const data: LatencyPoint[] = Array.from({ length: 20 }, (_, i) => ({
       time: i,
       latency: Math.floor(Math.random() * 20) + 10,
     }));
@@ -28,9 +30,9 @@ export const CloudBridgeChart: React.FC = () => {
       .domain([0, 40])
       .range([height - margin.bottom, margin.top]);
 
-    const line = d3.line<typeof data[0]>()
-      .x(d => x(d.time))
-      .y(d => y(d.latency))
+    const line = d3.line<LatencyPoint>()
+      .x((d: LatencyPoint) => x(d.time))
+      .y((d: LatencyPoint) => y(d.latency))
       .curve(d3.curveMonotoneX);
 
     svg.append('path')

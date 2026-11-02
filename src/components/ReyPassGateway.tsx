@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ShieldCheck, CreditCard, Lock, Sparkles, Check, Zap, ArrowRight } from 'lucide-react';
+import { ShieldCheck, CreditCard, Lock, Sparkles, Check, Zap, ArrowRight, Crown } from 'lucide-react';
 import { MembershipTier } from '../data/products';
 
 interface ReyPassGatewayProps {

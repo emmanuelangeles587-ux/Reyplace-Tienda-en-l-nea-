@@ -1,4 +1,4 @@
-import React, { createContext, useState, useContext, ReactNode, useEffect } from 'react';
+import React, { createContext, useState, useContext, ReactNode, useEffect, Dispatch, SetStateAction } from 'react';
 import { User, onAuthStateChanged, signInWithPopup, signOut as firebaseSignOut, createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth, googleAuthProvider } from '../lib/firebase.ts';
 import { z } from 'zod';
@@ -13,6 +13,7 @@ type UserRole = 'guest' | 'user' | 'superadmin';
 interface AuthContextType {
   user: User | null;
   role: UserRole;
+  setRole: Dispatch<SetStateAction<UserRole>>;
   isAuthenticated: boolean;
   signIn: () => Promise<void>;
   signUp: (email: string, password: string) => Promise<void>;
@@ -22,6 +23,7 @@ interface AuthContextType {
 const AuthContext = createContext<AuthContextType>({
   user: null,
   role: 'guest',
+  setRole: () => {},
   isAuthenticated: false,
   signIn: async () => {},
   signUp: async () => {},
@@ -53,7 +55,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const signUp = async (email: string, password: string) => {
     const validation = registerSchema.safeParse({ email, password });
     if (!validation.success) {
-      throw new Error(validation.error.errors[0].message);
+      throw new Error(validation.error.issues[0].message);
     }
     await createUserWithEmailAndPassword(auth, email, password);
   };
@@ -65,7 +67,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   if (loading) return null;
 
   return (
-    <AuthContext.Provider value={{ user, role, isAuthenticated: !!user, signIn, signUp, signOut }}>
+    <AuthContext.Provider value={{ user, role, setRole, isAuthenticated: !!user, signIn, signUp, signOut }}>
       {children}
     </AuthContext.Provider>
   );
