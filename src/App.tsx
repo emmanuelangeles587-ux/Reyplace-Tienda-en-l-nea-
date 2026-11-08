@@ -32,6 +32,7 @@ import {
   Lock,
   Unlock,
   Star,
+  FileText,
 } from 'lucide-react';
 import {
   PRODUCTS,
@@ -72,6 +73,7 @@ import { SinaloaGeoWelcomeBanner } from './components/SinaloaGeoWelcomeBanner';
 import { InstallPwaPrompt } from './components/InstallPwaPrompt';
 import { ReyPassGateway } from './components/ReyPassGateway';
 import { SuperAdminDashboard } from './components/SuperAdminDashboard';
+import { CartPDFQuoteModal } from './components/CartPDFQuoteModal';
 import { saveCart, getCart } from './lib/firebase.ts';
 
 type MainSection = 'catalogo' | 'simulador' | 'vip' | 'seguridad' | 'energia' | 'soporte';
@@ -160,6 +162,7 @@ export default function App() {
   const [reviewsProduct, setReviewsProduct] = useState<Product | null>(null);
   const [isVoiceModalOpen, setIsVoiceModalOpen] = useState<boolean>(false);
   const [isARVideoReviewsOpen, setIsARVideoReviewsOpen] = useState<boolean>(false);
+  const [isPDFQuoteOpen, setIsPDFQuoteOpen] = useState<boolean>(false);
 
   // User Behavior Signals for Hybrid Recommendation Engine
   const [viewedIds, setViewedIds] = useState<string[]>(['lock-quantum']);
@@ -359,6 +362,16 @@ export default function App() {
       const p = PRODUCTS.find((item) => item.id === id);
       return sum + (p ? p.price * qty : 0);
     }, 0);
+  }, [cart]);
+
+  const cartEntriesForQuote = useMemo(() => {
+    return Array.from(cart.entries())
+      .map(([id, qty]) => {
+        const product = PRODUCTS.find((p) => p.id === id);
+        if (!product) return null;
+        return { product, quantity: qty };
+      })
+      .filter((entry): entry is { product: Product; quantity: number } => entry !== null);
   }, [cart]);
   const shippingCost =
     shippingMethod === 'express' ? 199 : shippingMethod === 'standard' ? 99 : 0;
@@ -1872,13 +1885,24 @@ export default function App() {
 
             <div className="p-5 border-t border-slate-200 dark:border-slate-800">
               {checkoutStep === 'cart' && cart.size > 0 && (
-                <button
-                  type="button"
-                  onClick={() => setCheckoutStep('shipping')}
-                  className="w-full py-3.5 rounded-2xl bg-cyan-600 hover:bg-cyan-500 dark:bg-[#70e9ff] dark:hover:bg-[#56e2ff] text-white dark:text-[#070d1e] font-bold text-sm transition-colors"
-                >
-                  Continuar a Envío y Resumen
-                </button>
+                <div className="space-y-2.5">
+                  <button
+                    type="button"
+                    onClick={() => setIsPDFQuoteOpen(true)}
+                    className="w-full py-3 rounded-2xl neo-inset border border-cyan-500/30 text-cyan-600 dark:text-[#70e9ff] font-bold text-xs flex items-center justify-center gap-2 hover:bg-cyan-500/10 transition-colors"
+                  >
+                    <FileText className="w-4 h-4" />
+                    <span>Descargar Presupuesto PDF (+ Ahorro CFE)</span>
+                  </button>
+
+                  <button
+                    type="button"
+                    onClick={() => setCheckoutStep('shipping')}
+                    className="w-full py-3.5 rounded-2xl bg-cyan-600 hover:bg-cyan-500 dark:bg-[#70e9ff] dark:hover:bg-[#56e2ff] text-white dark:text-[#070d1e] font-bold text-sm transition-colors shadow-lg shadow-cyan-500/20"
+                  >
+                    Continuar a Envío y Resumen
+                  </button>
+                </div>
               )}
 
               {checkoutStep === 'shipping' && (
@@ -1980,6 +2004,16 @@ export default function App() {
         onNavigateSection={(sec) => setActiveSection(sec)}
         onAskReybot={(q) => handleSendChat(undefined, q)}
         onTriggerToast={triggerToast}
+      />
+
+      {/* Cart PDF Executive Quotation & Energy Savings Modal */}
+      <CartPDFQuoteModal
+        isOpen={isPDFQuoteOpen}
+        onClose={() => setIsPDFQuoteOpen(false)}
+        cartItems={cartEntriesForQuote}
+        subtotalMxn={cartSubtotalMxn}
+        discountMxn={pointsDiscountMxn}
+        shippingMxn={shippingCost}
       />
 
       {/* Subtle Toast Banner */}

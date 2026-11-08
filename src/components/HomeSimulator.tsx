@@ -38,6 +38,7 @@ import {
 import { Product, ProtocolType } from '../data/products';
 import { db, auth } from '../lib/firebase';
 import { collection, addDoc, getDocs, doc, setDoc } from 'firebase/firestore';
+import { NetworkTopologyViewer } from './NetworkTopologyViewer';
 
 export type PropertyType = 'Apartamento Urbano' | 'Residencia Amplia' | 'Penthouse Ejecutivo';
 export type RoomType =
@@ -113,6 +114,7 @@ export const HomeSimulator: React.FC<HomeSimulatorProps> = ({
   const [activeRoom, setActiveRoom] = useState<RoomType>('Sala Principal');
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [selectedScene, setSelectedScene] = useState<string | null>(null);
+  const [simViewMode, setSimViewMode] = useState<'blueprint' | 'topology'>('blueprint');
 
   // Placed devices
   const [placedDevices, setPlacedDevices] = useState<ConfiguredDevice[]>([
@@ -513,12 +515,63 @@ export const HomeSimulator: React.FC<HomeSimulatorProps> = ({
         </div>
       </div>
 
-      {/* Room Tabs & Scene Presets */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-        {/* Room Selector Carousel */}
-        <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
-          {ROOMS.map((r) => {
-            const isSelected = activeRoom === r.type;
+      {/* Primary Simulator View Selector */}
+      <div className="flex items-center gap-3 border-b border-slate-200/80 dark:border-slate-800/80 pb-3">
+        <button
+          type="button"
+          onClick={() => setSimViewMode('blueprint')}
+          className={`px-5 py-2.5 rounded-2xl text-xs font-bold flex items-center gap-2 transition-all ${
+            simViewMode === 'blueprint'
+              ? 'bg-slate-900 dark:bg-white text-white dark:text-slate-900 shadow-md scale-105'
+              : 'neo-surface border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:text-slate-900'
+          }`}
+        >
+          <Layers className="w-4 h-4 text-cyan-500" />
+          <span>Plano Arquitectónico & Dispositivos</span>
+        </button>
+
+        <button
+          type="button"
+          onClick={() => setSimViewMode('topology')}
+          className={`px-5 py-2.5 rounded-2xl text-xs font-bold flex items-center gap-2 transition-all ${
+            simViewMode === 'topology'
+              ? 'bg-slate-900 dark:bg-white text-white dark:text-slate-900 shadow-md scale-105'
+              : 'neo-surface border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:text-slate-900'
+          }`}
+        >
+          <Radio className="w-4 h-4 text-[#70e9ff]" />
+          <span>Topología de Red Matter & Hubs</span>
+          <span className="px-2 py-0.5 rounded-full text-[10px] bg-cyan-500/20 text-cyan-600 dark:text-[#70e9ff] font-mono-num font-bold">
+            Malla IPv6
+          </span>
+        </button>
+      </div>
+
+      {simViewMode === 'topology' ? (
+        <NetworkTopologyViewer
+          placedDevices={placedDevices}
+          products={products}
+          onAddHub={() => {
+            const newHub: ConfiguredDevice = {
+              uid: `hub-${Date.now()}`,
+              productId: 'hub-matter',
+              room: activeRoom,
+              xPct: 50,
+              yPct: 50,
+              isOn: true,
+            };
+            setPlacedDevices((prev) => [...prev, newHub]);
+            showToast('¡Hub Neural Matter adicional incorporado a la red Thread!');
+          }}
+        />
+      ) : (
+        <>
+          {/* Room Tabs & Scene Presets */}
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            {/* Room Selector Carousel */}
+            <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
+              {ROOMS.map((r) => {
+                const isSelected = activeRoom === r.type;
             const countInRoom = placedDevices.filter((d) => d.room === r.type).length;
             return (
               <button
@@ -1022,6 +1075,8 @@ export const HomeSimulator: React.FC<HomeSimulatorProps> = ({
           )}
         </div>
       </div>
+      </>
+      )}
 
       {/* Save Modal */}
       <AnimatePresence>
