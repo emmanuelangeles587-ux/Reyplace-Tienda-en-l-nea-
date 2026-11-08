@@ -35,6 +35,16 @@ service cloud.firestore {
           return data.items is map;
         }
       }
+
+      match /configurations/{configId} {
+        allow read: if isOwner(userId) || isAdmin();
+        allow write: if isOwner(userId) || isAdmin();
+      }
+
+      match /loyalty/profile {
+        allow read: if isOwner(userId) || isAdmin();
+        allow write: if isOwner(userId) || isAdmin();
+      }
     }
 
     // Products
@@ -45,13 +55,15 @@ service cloud.firestore {
       match /reviews/{reviewId} {
         allow read: if true;
         allow create: if isSignedIn() && isValidReview(incoming()) && incoming().productId == productId && incoming().userId == request.auth.uid;
+        allow update: if (isSignedIn() && isOwner(existing().userId) && isValidReview(incoming()))
+                      || (isSignedIn() && incoming().diff(existing()).affectedKeys().hasOnly(['helpfulCount', 'unhelpfulCount']))
+                      || isAdmin();
+        allow delete: if (isSignedIn() && isOwner(existing().userId)) || isAdmin();
         
         function isValidReview(data) {
           return data.productId is string && data.productId.size() <= 128
               && data.userId is string && data.userId.size() <= 128
-              && data.videoUrl is string && data.videoUrl.size() <= 2048
-              && data.timestamp is string && data.timestamp.size() <= 50
-              && data.comment is string && data.comment.size() <= 1000;
+              && data.comment is string && data.comment.size() <= 4000;
         }
       }
     }

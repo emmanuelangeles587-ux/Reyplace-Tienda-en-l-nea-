@@ -19,6 +19,7 @@ interface ProductCard3DProps {
   onOpenDetail: (product: Product) => void;
   onOpenInstallGuide: (product: Product) => void;
   onAddToCart: (productId: string) => void;
+  onOpenReviews?: (product: Product) => void;
 }
 
 export const ProductCard3D: React.FC<ProductCard3DProps> = ({
@@ -30,6 +31,7 @@ export const ProductCard3D: React.FC<ProductCard3DProps> = ({
   onOpenDetail,
   onOpenInstallGuide,
   onAddToCart,
+  onOpenReviews,
 }) => {
   const [tilt, setTilt] = useState({ rotateX: 0, rotateY: 0 });
 
@@ -110,11 +112,19 @@ export const ProductCard3D: React.FC<ProductCard3DProps> = ({
 
       {/* Card Body */}
       <div className="p-5 flex-1 flex flex-col">
-        {/* Clean Unboxed Metadata Line */}
+        {/* Clean Unboxed Metadata Line with Reviews trigger */}
         <div className="flex items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400">
           <span>{product.category}</span>
           <span aria-hidden="true">·</span>
-          <span className="font-mono-num">★ {product.rating}</span>
+          <button
+            type="button"
+            onClick={() => onOpenReviews ? onOpenReviews(product) : onOpenDetail(product)}
+            className="font-mono-num font-semibold text-amber-500 hover:underline flex items-center gap-0.5"
+            title="Ver reseñas de clientes"
+          >
+            <span>★ {product.rating}</span>
+            <span className="text-[10px] text-slate-400">({product.reviewsCount})</span>
+          </button>
           <span aria-hidden="true">·</span>
           <span>-{product.monthlyKwhSaved} kWh/mes</span>
         </div>

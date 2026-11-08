@@ -1,6 +1,6 @@
 export type ProductCategory = 'Smart Home' | 'Seguridad' | 'Automatización' | 'Redes' | 'Negocios';
 export type ProtocolType = 'Matter' | 'Apple HomeKit' | 'Zigbee' | 'Google Home' | 'Alexa';
-export type MembershipTier = 'Bronce' | 'Plata' | 'Oro';
+export type MembershipTier = 'Bronce' | 'Plata' | 'Oro' | 'Diamante';
 
 export interface InstallStep {
   stepNumber: number;
@@ -450,6 +450,62 @@ export const PRODUCTS: Product[] = [
         estimatedMinutes: 5,
         proTip: 'Agenda una sesión sin costo con ingeniería REYPLACE.MX para calibrar analíticas perimetrales.',
         requiredTool: 'Panel de Seguridad REYPLACE',
+      },
+    ],
+  },
+  {
+    id: 'thermostat-matter',
+    name: 'Termostato Inteligente Ecobee Pro Matter',
+    category: 'Automatización',
+    price: 3499,
+    originalPrice: 3999,
+    rating: 4.9,
+    reviewsCount: 167,
+    description:
+      'Termostato de pared táctil con pantalla OLED circular en vidrio templado y bisel de titanio. Climatización predictiva con modulación inverter y soporte nativo Matter sobre Thread y Wi-Fi.',
+    features: [
+      'Control de temperatura y humedad inteligente con modulación inverter',
+      'Compatibilidad universal con minisplits inverter y sistemas HVAC',
+      'Sensor de presencia y ocupación mmWave integrado para modo Eco',
+      'Ahorro comprobado de hasta 26% en el recibo de energía en Sinaloa',
+    ],
+    image: '/src/assets/images/ambient_smart_bulbs_1793514323740.jpg',
+    compatibility: ['Matter', 'Apple HomeKit', 'Google Home', 'Alexa'],
+    stock: 20,
+    monthlyKwhSaved: 48,
+    specs: {
+      encryption: 'TLS 1.3 + Cifrado local AES-256 Matter',
+      powerSource: '24V AC Cable C o adaptador USB-C 5V',
+      connectivity: 'Wi-Fi 6 Dual-Band + Thread Border Router',
+      weatherRating: 'IP20 Interior / Cristal templado de alta resistencia',
+      responseLatency: '20 ms respuesta inmediata a cambios térmicos',
+      warranty: '3 años REYPLACE Care',
+    },
+    relatedIds: ['sensor-iot', 'hub-matter', 'wifi7-mesh'],
+    installSteps: [
+      {
+        stepNumber: 1,
+        title: 'Retiro del termostato anterior e identificación de cables',
+        description: 'Corta la energía en el interruptor principal y etiqueta los cables R, C, W, Y, G usando los adhesivos incluidos.',
+        estimatedMinutes: 8,
+        proTip: 'Verifica la presencia del cable común C (24V) para alimentación continua.',
+        requiredTool: 'Destornillador de precisión',
+      },
+      {
+        stepNumber: 2,
+        title: 'Fijación de la placa posterior y nivelado',
+        description: 'Fija la base de titanio a la pared utilizando los taquetes y nivela con la burbuja integrada.',
+        estimatedMinutes: 5,
+        proTip: 'Aísla el hueco de la pared para evitar que corrientes de aire afecten el sensor térmico.',
+        requiredTool: 'Nivel incluido y taladro',
+      },
+      {
+        stepNumber: 3,
+        title: 'Acoplamiento frontal y vinculación Matter',
+        description: 'Presiona la unidad circular hasta escuchar el clic y escanea el código Matter en tu teléfono.',
+        estimatedMinutes: 3,
+        proTip: 'Activa el modo Eco en horarios de oficina para ahorro automático.',
+        requiredTool: 'Smartphone con app ReyPlace o Google Home',
       },
     ],
   },

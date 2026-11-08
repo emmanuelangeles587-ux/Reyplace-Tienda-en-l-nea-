@@ -48,7 +48,7 @@ export function ReyPassGateway({
   };
 
   const splitAmount = (totalAmountMxn / 3).toFixed(2);
-  const isGold = membershipTier === 'Oro';
+  const isGold = membershipTier === 'Oro' || membershipTier === 'Diamante';
 
   return (
     <div className="space-y-5">

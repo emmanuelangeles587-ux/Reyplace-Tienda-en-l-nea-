@@ -23,9 +23,16 @@ export const CheckoutSummary: React.FC<CheckoutSummaryProps> = ({
   }, 0);
 
   const tierDiscountRate =
-    membershipTier === 'Oro' ? 0.08 : membershipTier === 'Plata' ? 0.04 : 0;
+    membershipTier === 'Diamante'
+      ? 0.12
+      : membershipTier === 'Oro'
+      ? 0.08
+      : membershipTier === 'Plata'
+      ? 0.05
+      : 0;
   const tierDiscount = Math.round(subtotal * tierDiscountRate);
-  const effectiveShipping = membershipTier === 'Oro' ? 0 : shippingCost;
+  const effectiveShipping =
+    membershipTier === 'Diamante' || membershipTier === 'Oro' ? 0 : shippingCost;
   const finalTotal = Math.max(
     0,
     subtotal - tierDiscount - pointsDiscount + (subtotal > 0 ? effectiveShipping : 0)

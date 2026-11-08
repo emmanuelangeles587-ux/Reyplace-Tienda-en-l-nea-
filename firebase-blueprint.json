@@ -44,16 +44,53 @@
     },
     "Review": {
       "title": "Review",
-      "description": "Product AR video review",
+      "description": "Product review with ratings, multimedia, and moderation",
       "type": "object",
       "properties": {
         "productId": { "type": "string" },
         "userId": { "type": "string" },
+        "authorName": { "type": "string" },
+        "city": { "type": "string" },
+        "rating": { "type": "number" },
+        "title": { "type": "string" },
+        "comment": { "type": "string" },
+        "pros": { "type": "string" },
+        "cons": { "type": "string" },
         "videoUrl": { "type": "string" },
-        "timestamp": { "type": "string", "format": "date-time" },
-        "comment": { "type": "string" }
+        "thumbnailUrl": { "type": "string" },
+        "verifiedPurchase": { "type": "boolean" },
+        "helpfulCount": { "type": "number" },
+        "status": { "type": "string" },
+        "officialResponse": { "type": "string" },
+        "timestamp": { "type": "string", "format": "date-time" }
       },
-      "required": ["productId", "userId", "videoUrl", "timestamp"]
+      "required": ["productId", "userId", "rating", "comment"]
+    },
+    "SavedConfig": {
+      "title": "SavedConfig",
+      "description": "Saved smart home configurator room layout",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "name": { "type": "string" },
+        "propertyType": { "type": "string" },
+        "room": { "type": "string" },
+        "shareCode": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["name", "propertyType", "room"]
+    },
+    "LoyaltyProfile": {
+      "title": "LoyaltyProfile",
+      "description": "VIP Loyalty Member Profile",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "tier": { "type": "string" },
+        "points": { "type": "number" },
+        "totalSpentMxn": { "type": "number" }
+      },
+      "required": ["userId", "tier", "points"]
     }
   },
   "firestore": {
@@ -65,13 +102,21 @@
       "schema": { "$ref": "#/entities/UserProfile" },
       "description": "User profile"
     },
+    "/users/{userId}/configurations/{configId}": {
+      "schema": { "$ref": "#/entities/SavedConfig" },
+      "description": "User saved room designs"
+    },
+    "/users/{userId}/loyalty/profile": {
+      "schema": { "$ref": "#/entities/LoyaltyProfile" },
+      "description": "User VIP loyalty status and points"
+    },
     "/products/{productId}": {
       "schema": { "$ref": "#/entities/Product" },
       "description": "Catalog products"
     },
     "/products/{productId}/reviews/{reviewId}": {
       "schema": { "$ref": "#/entities/Review" },
-      "description": "AR video reviews for products"
+      "description": "Product reviews and ratings"
     },
     "/admins/{uid}": {
       "schema": { "$ref": "#/entities/Admin" },

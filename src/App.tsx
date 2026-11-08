@@ -31,6 +31,7 @@ import {
   Mic,
   Lock,
   Unlock,
+  Star,
 } from 'lucide-react';
 import {
   PRODUCTS,
@@ -65,6 +66,7 @@ import { EnergyHeatMap } from './components/EnergyHeatMap';
 import { WeatherWidget } from './components/WeatherWidget';
 import { VoiceAssistantModal } from './components/VoiceAssistantModal';
 import { ARVideoReviewsModal, ARVideoReview } from './components/ARVideoReviewsModal';
+import { ProductReviewsSystem } from './components/ProductReviewsSystem';
 import { DynamicMetaTags } from './components/DynamicMetaTags';
 import { SinaloaGeoWelcomeBanner } from './components/SinaloaGeoWelcomeBanner';
 import { InstallPwaPrompt } from './components/InstallPwaPrompt';
@@ -72,7 +74,7 @@ import { ReyPassGateway } from './components/ReyPassGateway';
 import { SuperAdminDashboard } from './components/SuperAdminDashboard';
 import { saveCart, getCart } from './lib/firebase.ts';
 
-type MainSection = 'catalogo' | 'simulador' | 'seguridad' | 'energia' | 'soporte';
+type MainSection = 'catalogo' | 'simulador' | 'vip' | 'seguridad' | 'energia' | 'soporte';
 
 export default function App() {
   // Dual-Theme State (Dark Luxury default, intuitive Light Neomorphic toggle)
@@ -155,6 +157,7 @@ export default function App() {
   const [detailProduct, setDetailProduct] = useState<Product | null>(null);
   const [installGuideProduct, setInstallGuideProduct] = useState<Product | null>(null);
   const [arViewerProduct, setArViewerProduct] = useState<Product | null>(null);
+  const [reviewsProduct, setReviewsProduct] = useState<Product | null>(null);
   const [isVoiceModalOpen, setIsVoiceModalOpen] = useState<boolean>(false);
   const [isARVideoReviewsOpen, setIsARVideoReviewsOpen] = useState<boolean>(false);
 
@@ -165,21 +168,23 @@ export default function App() {
     'hub-matter',
   ]);
 
-  // Loyalty Program State (ReyClub: Bronce, Plata, Oro)
+  // Loyalty Program State (ReyClub VIP: Bronce, Plata, Oro, Diamante)
   const [loyaltyPoints, setLoyaltyPoints] = useState<number>(320);
   const [totalSpentMxn, setTotalSpentMxn] = useState<number>(3200);
   const [pointsDiscountMxn, setPointsDiscountMxn] = useState<number>(0);
 
   const membershipTier: MembershipTier = useMemo(() => {
-    if (loyaltyPoints >= 1500) return 'Oro';
-    if (loyaltyPoints >= 500) return 'Plata';
+    if (loyaltyPoints >= 3500 || totalSpentMxn >= 35000) return 'Diamante';
+    if (loyaltyPoints >= 1500 || totalSpentMxn >= 15000) return 'Oro';
+    if (loyaltyPoints >= 500 || totalSpentMxn >= 5000) return 'Plata';
     return 'Bronce';
-  }, [loyaltyPoints]);
+  }, [loyaltyPoints, totalSpentMxn]);
 
-  const nextTierTarget = membershipTier === 'Bronce' ? 500 : 1500;
+  const nextTierTarget =
+    membershipTier === 'Bronce' ? 500 : membershipTier === 'Plata' ? 1500 : 3500;
   const pointsToNextTier =
-    membershipTier === 'Oro' ? 0 : Math.max(0, nextTierTarget - loyaltyPoints);
-  const miniProgressPct = Math.min(100, Math.round((loyaltyPoints / 1500) * 100));
+    membershipTier === 'Diamante' ? 0 : Math.max(0, nextTierTarget - loyaltyPoints);
+  const miniProgressPct = Math.min(100, Math.round((loyaltyPoints / 3500) * 100));
 
   // Real-time Security State & Browser Push Notifications
   const {
@@ -536,9 +541,11 @@ export default function App() {
           >
             {[
                 { id: 'catalogo', label: 'Catálogo' },
-                { id: 'simulador', label: 'Simulador' },
+                { id: 'simulador', label: 'Configurador' },
+                { id: 'vip', label: 'Club VIP' },
                 { id: 'seguridad', label: 'Seguridad' },
                 { id: 'energia', label: 'Ecosistema' },
+                { id: 'soporte', label: 'REYBOT' },
             ].map((item) => (
               <button
                 key={item.id}
@@ -609,9 +616,10 @@ export default function App() {
             {(
               [
                 { id: 'catalogo', label: 'Catálogo' },
-                { id: 'simulador', label: 'Simulador' },
+                { id: 'simulador', label: 'Configurador' },
+                { id: 'vip', label: 'Club VIP' },
                 { id: 'seguridad', label: 'Seguridad' },
-                { id: 'energia', label: 'Perfil' },
+                { id: 'energia', label: 'Ecosistema' },
                 { id: 'soporte', label: 'REYBOT' },
               ] as const
             ).map((item) => (
@@ -632,7 +640,7 @@ export default function App() {
 
           <button
             type="button"
-            onClick={() => setActiveSection('energia')}
+            onClick={() => setActiveSection('vip')}
             className="hidden md:flex items-center gap-3 group text-left"
           >
             <span className="flex items-center gap-1.5 font-semibold text-slate-800 dark:text-slate-200 group-hover:text-cyan-600 dark:group-hover:text-[#70e9ff] transition-colors">
@@ -960,7 +968,15 @@ export default function App() {
                             <div className="flex items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400">
                               <span>{product.category}</span>
                               <span aria-hidden="true">·</span>
-                              <span className="font-mono-num">★ {product.rating}</span>
+                              <button
+                                type="button"
+                                onClick={() => setReviewsProduct(product)}
+                                className="font-mono-num font-semibold text-amber-500 hover:underline flex items-center gap-0.5"
+                                title="Ver opiniones y calificaciones de clientes"
+                              >
+                                <span>★ {product.rating}</span>
+                                <span className="text-[10px] text-slate-400">({product.reviewsCount})</span>
+                              </button>
                               <span aria-hidden="true">·</span>
                               <span>-{product.monthlyKwhSaved} kWh/mes</span>
                             </div>
@@ -1103,6 +1119,19 @@ export default function App() {
             onRequestPermission={requestDesktopPermission}
             recentAlerts={recentAlerts}
           />
+        )}
+
+        {activeSection === 'vip' && (
+          <div className="space-y-8">
+            <LoyaltyDashboard
+              points={loyaltyPoints}
+              tier={membershipTier}
+              totalSpentMxn={totalSpentMxn}
+              pointsDiscount={pointsDiscountMxn}
+              onRedeemDiscount={handleRedeemPoints}
+              onEarnPoints={handleEarnLoyaltyPoints}
+            />
+          </div>
         )}
 
         {activeSection === 'energia' && (
@@ -1261,7 +1290,18 @@ export default function App() {
                   <span className="text-xl font-extrabold font-mono-num text-cyan-700 dark:text-[#70e9ff]">
                     ${detailProduct.price.toLocaleString()} MXN
                   </span>
-                  <div className="flex gap-2">
+                  <div className="flex gap-2 flex-wrap">
+                    <button
+                      type="button"
+                      onClick={() => {
+                        const target = detailProduct;
+                        setDetailProduct(null);
+                        setReviewsProduct(target);
+                      }}
+                      className="px-3 py-2.5 rounded-xl neo-inset text-xs font-bold text-amber-500 hover:text-amber-400 flex items-center gap-1.5 transition-colors"
+                    >
+                      <Star className="w-3.5 h-3.5 fill-amber-400" /> Reseñas ({detailProduct.reviewsCount})
+                    </button>
                     <button
                       type="button"
                       onClick={() => {
@@ -1269,9 +1309,9 @@ export default function App() {
                         setDetailProduct(null);
                         setArViewerProduct(target);
                       }}
-                      className="px-3.5 py-2.5 rounded-xl neo-inset text-xs font-bold text-cyan-600 dark:text-[#70e9ff] flex items-center gap-1.5 transition-colors"
+                      className="px-3 py-2.5 rounded-xl neo-inset text-xs font-bold text-cyan-600 dark:text-[#70e9ff] flex items-center gap-1.5 transition-colors"
                     >
-                      <Eye className="w-3.5 h-3.5" /> Visualización RA
+                      <Eye className="w-3.5 h-3.5" /> RA
                     </button>
                     <button
                       type="button"
@@ -1280,7 +1320,7 @@ export default function App() {
                         setDetailProduct(null);
                         setInstallGuideProduct(target);
                       }}
-                      className="px-3.5 py-2.5 rounded-xl neo-inset text-xs font-bold flex items-center gap-1.5"
+                      className="px-3 py-2.5 rounded-xl neo-inset text-xs font-bold flex items-center gap-1.5"
                     >
                       <Wrench className="w-3.5 h-3.5" /> Guía
                     </button>
@@ -1351,6 +1391,35 @@ export default function App() {
         onClose={() => setInstallGuideProduct(null)}
         onAddToCart={(id) => addToCart(id)}
       />
+
+      {/* Product Reviews and Ratings System Modal */}
+      {reviewsProduct && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/85 backdrop-blur-xl"
+          role="dialog"
+          aria-modal="true"
+          onClick={(e) => {
+            if (e.target === e.currentTarget) setReviewsProduct(null);
+          }}
+        >
+          <div className="relative w-full max-w-5xl max-h-[90vh] overflow-y-auto rounded-[32px]">
+            <button
+              type="button"
+              onClick={() => setReviewsProduct(null)}
+              aria-label="Cerrar reseñas"
+              className="absolute top-6 right-6 z-30 w-10 h-10 rounded-2xl neo-inset flex items-center justify-center text-slate-400 hover:text-white transition-colors"
+            >
+              <X className="w-5 h-5" />
+            </button>
+            <ProductReviewsSystem
+              product={reviewsProduct}
+              onClose={() => setReviewsProduct(null)}
+              onEarnPoints={handleEarnLoyaltyPoints}
+              isAdmin={role === 'superadmin' || showSuperAdmin}
+            />
+          </div>
+        </div>
+      )}
 
       {/* Cart & Multi-Step Checkout Drawer with Luhn Validation & Order Summary */}
       {isCartOpen && (
